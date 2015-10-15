@@ -1,0 +1,34 @@
+
+.button {
+	background: transparent;
+	border: 2px solid #FFF;
+	border-color: inherit;
+	color: inherit;
+	//font-family: $header-font;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 1.3em;
+	margin-bottom: 0px;
+	transition: .1s;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: #FFF;
+		color: #000;
+
+		.bg-white & {
+			border-color: $primary-color;
+			color: $primary-color; 
+		}
+	}
+
+	&:visited {
+		background: transparent;
+	} 
+}
+
+.button.min200 {
+	min-width: 200px;
+}

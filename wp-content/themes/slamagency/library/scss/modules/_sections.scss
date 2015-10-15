@@ -1,0 +1,158 @@
+
+
+.slam_section {
+	z-index: 5;
+}
+
+.slam_section_content {
+	position: relative;
+}
+
+
+// Opacity Settings
+.has_image {
+	overflow-y: hidden; 
+	position: relative;
+}
+
+.opaque {
+	opacity: 1;
+}
+.fade-85 {
+	opacity: .85;
+}
+.fade-50 {
+	opacity: .5;
+}
+.fade-15 {
+	opacity: .15;
+}
+
+
+.section_background_div {
+	position: absolute; 
+	left:0px;
+	right:0px;
+	top: -100px;
+	bottom: -100px;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+
+// Padding Settings
+.slam_section_content,
+.normal-padding {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.no-padding {
+	padding: 0px;
+}
+.thin-padding {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}	
+.thick-padding {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.extra-padding .slam_section_content {
+	padding-top: 240px;
+	padding-bottom: 240px;
+}
+
+.slam_section:first-child {
+	padding-top: 60px;
+	z-index: 0;
+}
+
+@media #{$large-up}{
+	.popover {
+		margin-top: -120px;
+		margin-bottom: -120px;
+
+		.thick-padding & {
+			margin-top: -150px;
+			margin-bottom: -150px;
+		}
+		.thin-padding & {
+			margin-top: -60px;
+			margin-bottom: -60px;
+		}
+		.no-padding & {
+			margin-top: -30px;
+			margin-bottom: -30px;
+		}
+	}
+}
+
+img.bordered {
+	border: 8px solid #FFF;
+	border-color: inherit;
+}
+
+
+.paddingless {
+	padding: 0px;
+}
+
+.side-padding {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+
+// Content Width Settings
+.fullwidth.row {
+	max-width: 100%;
+	margin: 0px;
+}
+
+
+.bg-blur {
+	.section_background_image {
+		filter: blur(4px);
+	}
+}
+
+// Content Width Settings
+.fullwidth.row,
+.fullwidth.slam_section_content > .row  {
+	max-width: 100%;
+	//padding-left:	rem-calc(20);
+	//padding-right:	rem-calc(20);
+	
+}
+
+.slam_section_content.two-thirds > .row > .columns {
+	@extend .medium-8;
+	@extend .small-centered;
+	margin: 0px auto;
+}
+
+.slam_section_content.half > .row > .columns {
+	@extend .medium-6;
+	@extend .small-centered;
+	margin: 0px auto;
+}
+
+.slider-section {
+	max-height: 80vh;
+}
+
+
+.slam_section_content.half img.alignleft {
+	margin-left: -25%;
+	border: 6px solid #EEE;
+}
+
+.slam_section_content.half img.alignright {
+	margin-right: -25%;
+	border: 6px solid #EEE;
+}
+
+
+

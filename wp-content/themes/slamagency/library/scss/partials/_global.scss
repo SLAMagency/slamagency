@@ -1,0 +1,69 @@
+body {
+	background-color: #000;
+	color: #FFF;
+}
+
+#content, .content {
+	background-color: #FFF;
+	color: $gray;
+}
+
+.fill {
+	width: 100%;
+	heigh: auto;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1em;
+}
+
+img.aligncenter, img.text-center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+
+.round {
+	border-radius: 50%;
+}
+.v-center {
+	margin-top: 50%;
+	transform: translateY(-50%);
+}
+@media #{$large-up}{
+	.large-v-center {
+		margin-top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.no-margin {
+	margin: 0px;
+}
+
+.hide,
+.hidden {
+	display: none;
+}
+
+

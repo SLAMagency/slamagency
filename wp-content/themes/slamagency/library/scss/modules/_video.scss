@@ -1,0 +1,40 @@
+a.loadvideo {
+	overflow: hidden;
+	display: block;
+	position: relative;
+	transition: .2s;
+	background-color: #000;
+	img {
+		transition: .2s;
+	}
+	&:before {
+		content:  "\f196";
+		font-family: "foundation-icons";
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		text-decoration: inherit;
+
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		line-height: 50px;
+		top: 50%;
+		margin-top: -25px;
+		font-size: 100px;
+		z-index: 100;
+
+		
+	}
+
+	&:hover img {
+		
+		//filter: grayscale(100%);
+		opacity: .5;
+		
+	}	
+}

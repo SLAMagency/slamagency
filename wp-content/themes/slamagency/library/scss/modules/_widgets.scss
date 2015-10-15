@@ -1,0 +1,30 @@
+
+.widget { }
+
+.widgettitle {
+	font-family: $header-thin;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.4em;
+	padding-bottom: 4px;
+	color: $blue;
+	border-bottom: 2px solid $blue;
+	margin-bottom: 1em;
+}
+
+.widget_nav_menu {
+	//@extend .large-6; 
+	ul.menu {
+		list-style: none;
+		margin-left: 0px;
+		ul {
+			margin-left: 10px;
+		}
+		@media #{$large-up}{
+			-webkit-column-count: 2;
+		}
+	}
+
+
+}

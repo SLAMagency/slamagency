@@ -1,0 +1,13 @@
+.logo-bit {
+	position: relative;
+	padding-bottom: 30px;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 65px;
+		background: url('../images/logo-bit-white.svg') repeat-x bottom center;
+		top: -64px;
+		left: 0;
+	}
+}

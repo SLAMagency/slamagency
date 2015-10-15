@@ -1,0 +1,295 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"zf",
+				"zf-offcanvas	ZURB Foundation 5 Offcanvas"
+			],
+			[
+				"get",
+				"get_duration"
+			],
+			[
+				"mou",
+				"mountainsTimeline"
+			],
+			[
+				"json_",
+				"json_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kirkhadden/Dropbox/MAMP/wp.slamagency.dev/wp-content/themes/slamagency_theme"
+	],
+	"file_history":
+	[
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/partials/menu.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/partials/video.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/js/mountains.js",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/scss/_small.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/scss/_medium.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/scss/_settings.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/img/mount-1.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/img/mount-3.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/img/mount-4.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/img/mount-5.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/img/mount-6.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/scss/modules/_mobile.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/js/script.js",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/scss/modules/_menu.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/scss/style.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/WP/dreamhome/scss/modules/_button.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/WP/wp-includes/css/buttons.css",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/css/style.css",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/WP/dreamhome/scss/modules/_sections.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/img/mount-2.php",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/library/js/animation.gsap.js",
+		"/Users/kirkhadden/Library/Application Support/Sublime Text 3/Packages/bz2/dependency-metadata.json",
+		"/Users/kirkhadden/Library/Application Support/Sublime Text 3/Packages/bz2/st3_osx_x64/_bz2.so",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/scss/style.scss",
+		"/Users/kirkhadden/Dropbox/MAMP/slamagency.dev/bower_components/foundation/css/normalize.css",
+		"/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"height: 10px;\n  margin-top: -5px;",
+			" ",
+			"myModal",
+			"45vh",
+			"</h1>",
+			"<h1>",
+			"h3",
+			"h1",
+			"small",
+			"images",
+			"Section",
+			"section",
+			"Section",
+			"section",
+			"&",
+			"form_data",
+			"accept_file"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "wp_slamagency.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vid",
+				"partials/video.php"
+			],
+			[
+				"settings.sc",
+				"library/scss/_settings.scss"
+			],
+			[
+				"cta",
+				"library/scss/modules/_cta.scss"
+			],
+			[
+				"reve",
+				"library/scss/modules/_reveal.scss"
+			],
+			[
+				"_vi",
+				"library/scss/modules/_video.scss"
+			],
+			[
+				"scrip",
+				"library/js/script.js"
+			],
+			[
+				"time",
+				"partials/time.php"
+			],
+			[
+				"video",
+				"partials/video.php"
+			],
+			[
+				"style",
+				"library/scss/style.scss"
+			],
+			[
+				"_but",
+				"WP/dreamhome/scss/modules/_button.scss"
+			],
+			[
+				"button",
+				"WP/wp-includes/css/buttons.css"
+			],
+			[
+				"sty",
+				"library/css/style.css"
+			],
+			[
+				"menu",
+				"library/scss/modules/_menu.scss"
+			],
+			[
+				"sections",
+				"WP/dreamhome/scss/modules/_sections.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

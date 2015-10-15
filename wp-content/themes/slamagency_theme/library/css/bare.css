@@ -1,0 +1,1933 @@
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("../fonts/foundation-icons.eot");
+  src: url("../fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/foundation-icons.woff") format("woff"),
+       url("../fonts/foundation-icons.ttf") format("truetype"),
+       url("../fonts/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi-marker:before,
+.fi-print:before,
+.fi-social-facebook:before,
+.fi-social-instagram:before,
+.fi-social-vimeo:before,
+.fi-social-youtube:before,
+.fi-telephone:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-marker:before {
+  content: "\f172";
+}
+
+.fi-print:before {
+  content: "\f19f";
+}
+
+.fi-social-facebook:before {
+  content: "\f1c4";
+}
+
+.fi-social-instagram:before {
+  content: "\f1cd";
+}
+
+.fi-social-vimeo:before {
+  content: "\f1e5";
+}
+
+.fi-social-youtube:before {
+  content: "\f1ea";
+}
+
+.fi-telephone:before {
+  content: "\f1f8";
+}
+
+/*** uncss> filename: http://foobar.click/grsauctions.dev/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.1.1 ***/
+
+/*** uncss> filename: http://fonts.googleapis.com/css?family=Abel&ver=4.2.2 ***/
+
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel'), local('Abel-Regular'), url(http://fonts.gstatic.com/s/abel/v6/N59kklKPso9WzbZH9jwJSg.ttf) format('truetype');
+}
+
+/*** uncss> filename: http://foobar.click/grsauctions.dev/wp-content/themes/grsauctions/library/css/style.css?ver=2.0(Sass) ***/
+
+@charset "UTF-8";
+
+/******************************************************************
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:700italic,300,700,300italic);
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+/******************************************************************
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
+
+/*********************
+TOOLS
+*********************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('library/fonts/font-name.eot');
+    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+
+/*********************
+TRANSITION
+*********************/
+
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 2996052, 2015-03-23T10:34:13-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AbelPro-Bold by MADType
+ * URL: http://www.myfonts.com/fonts/madtype/abel-pro/bold/
+ * Copyright: Copyright (c) 2012 by Matthew Desmond. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2996052
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@font-face {
+  font-family: 'Abel';
+  font-weight: bold;
+  src: url("webfonts/2DB754_0_0.eot");
+  src: url("webfonts/2DB754_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2DB754_0_0.woff2") format("woff2"), url("webfonts/2DB754_0_0.woff") format("woff"), url("webfonts/2DB754_0_0.ttf") format("truetype");
+}
+
+meta.foundation-mq-small {
+  font-family: "/only screen/";
+  width: 0;
+}
+
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em;
+}
+
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em;
+}
+
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em;
+}
+
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+@media only screen {
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+
+  .small-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .medium-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  .medium-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+
+  .medium-6 {
+    width: 50%;
+  }
+
+  .medium-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+
+  .large-12 {
+    width: 100%;
+  }
+}
+
+/* Accessibility - hides the forward slash */
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Clearing Styles */
+
+/* Standard Forms */
+
+/* Using forms within rows, we need to set some defaults */
+
+/* Label Styles */
+
+label {
+  font-size: 0.875rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+  /* Styles for required inputs */
+}
+
+/* Attach elements to the beginning or end of an input */
+
+/* Adjust padding, alignment and radius if pre/post element is a button */
+
+/* Separate prefix and postfix styles when on span or label so buttons keep their own */
+
+/* We use this to get basic styling on all basic form elements */
+
+/* Respect enforced amount of rows for textarea */
+
+/* Not allow resize out of parent */
+
+/* Add height value for select elements to match text input height */
+
+select::-ms-expand {
+  display: none;
+}
+
+/* Adjust margin for form elements below */
+
+/* Normalize file input width */
+
+/* HTML5 Number spinners settings */
+
+/* We add basic fieldset styling */
+
+/* Error Handling */
+
+/* Pagination centred wrapper */
+
+/* Panels */
+
+/* Image Thumbnails */
+
+/* Tooltips */
+
+meta.foundation-mq-topbar {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em;
+}
+
+/* Wrapped around .top-bar to contain to grid width */
+
+.top-bar {
+  overflow: hidden;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  position: relative;
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.top-bar ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    background: transparent;
+    overflow: visible;
+  }
+
+  .top-bar:before,
+  .top-bar:after {
+    content: " ";
+    display: table;
+  }
+
+  .top-bar:after {
+    clear: both;
+  }
+}
+
+/* Typography resets */
+
+div,
+ul,
+li,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default Link Styles */
+
+a {
+  color: #056bcd;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover,
+a:focus {
+  color: #045cb0;
+}
+
+/* Default paragraph styles */
+
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+
+/* Default header styles */
+
+h1 {
+  font-family: "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.125rem;
+}
+
+/* Helpful Typography Defaults */
+
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* Lists */
+
+ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  list-style-position: outside;
+  font-family: inherit;
+}
+
+ul {
+  margin-left: 1.1rem;
+}
+
+/* Unordered Lists */
+
+/* Ordered Lists */
+
+/* Definition Lists */
+
+/* Abbreviations */
+
+/* Blockquotes */
+
+/* Microformats */
+
+@media only screen and (min-width: 40.063em) {
+  h1 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+
+.off-canvas-wrap {
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.off-canvas-wrap.move-right {
+  min-height: 100%; -webkit-overflow-scrolling: touch;
+}
+
+.move-right > .inner-wrap {
+    transform: translate3d(15.625rem,0,0);
+}
+
+
+
+.no-csstransforms {
+  .left-off-canvas-menu { left: -(15.625rem); }
+  .right-off-canvas-menu { right: -(15.625rem); }
+
+  .move-left > .inner-wrap { right: 15.625rem; }
+  .move-right > .inner-wrap { left: 15.625rem; }
+}
+
+.left-submenu.move-right, 
+.left-submenu.offcanvas-overlap-right, 
+.left-submenu.offcanvas-overlap {
+    -webkit-transform: translate3d(0%,0,0);
+    transform: translate3d(0%,0,0);
+  }
+}
+
+
+
+.inner-wrap {
+  position: relative;
+  width: 100%;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+}
+
+.inner-wrap:before,
+.inner-wrap:after {
+  content: " ";
+  display: table;
+}
+
+.inner-wrap:after {
+  clear: both;
+}
+
+.tab-bar {
+  -webkit-backface-visibility: hidden;
+  background: #333333;
+  color: #FFFFFF;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  position: relative;
+}
+
+.tab-bar h1 {
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 2.8125rem;
+  margin: 0;
+}
+
+.tab-bar h1 {
+  font-size: 1.125rem;
+}
+
+.left-small {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  position: absolute;
+  top: 0;
+  border-right: solid 1px #1a1a1a;
+  left: 0;
+}
+
+.tab-bar-section {
+  padding: 0 0.625rem;
+  position: absolute;
+  text-align: center;
+  height: 2.8125rem;
+  top: 0;
+}
+
+.tab-bar-section.middle {
+  left: 2.8125rem;
+  right: 2.8125rem;
+}
+
+.tab-bar .menu-icon {
+  text-indent: 2.1875rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  display: block;
+  padding: 0;
+  color: #FFFFFF;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.tab-bar .menu-icon span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0;
+  top: 50%;
+  margin-top: -0.5rem;
+  left: 0.90625rem;
+  box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+  width: 1rem;
+}
+
+.tab-bar .menu-icon span:hover:after {
+  box-shadow: 0 0 0 1px #b3b3b3, 0 7px 0 1px #b3b3b3, 0 14px 0 1px #b3b3b3;
+}
+
+.left-off-canvas-menu {
+  -webkit-backface-visibility: hidden;
+  width: 15.625rem;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #333333;
+  z-index: 1001;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: -webkit-transform 500ms ease 0s;
+  transition: transform 500ms ease 0s;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  left: 0;
+}
+
+.left-off-canvas-menu * {
+  -webkit-backface-visibility: hidden;
+}
+
+ul.off-canvas-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.off-canvas-list li label {
+  display: block;
+  padding: 0.3rem 0.9375rem;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background: #444444;
+  border-top: 1px solid #5e5e5e;
+  border-bottom: none;
+  margin: 0;
+}
+
+ul.off-canvas-list li a {
+  display: block;
+  padding: 0.66667rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #262626;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+ul.off-canvas-list li a:hover {
+  background: #242424;
+}
+
+/* small displays */
+
+@media only screen {
+  .show-for-small-only {
+    display: inherit !important;
+  }
+
+  .show-for-medium-up {
+    display: none !important;
+  }
+}
+
+/* medium displays */
+
+@media only screen and (min-width: 40.063em) {
+  .show-for-medium-up {
+    display: inherit !important;
+  }
+
+  .show-for-small-only {
+    display: none !important;
+  }
+}
+
+/* large displays */
+
+@media only screen and (min-width: 64.063em) {
+  .show-for-medium-up {
+    display: inherit !important;
+  }
+
+  .show-for-small-only {
+    display: none !important;
+  }
+}
+
+/* xlarge displays */
+
+@media only screen and (min-width: 90.063em) {
+  .show-for-medium-up {
+    display: inherit !important;
+  }
+
+  .show-for-small-only {
+    display: none !important;
+  }
+}
+
+/* xxlarge displays */
+
+@media only screen and (min-width: 120.063em) {
+  .show-for-medium-up {
+    display: inherit !important;
+  }
+
+  .show-for-small-only {
+    display: none !important;
+  }
+}
+
+/* Orientation targeting */
+
+/* Specific visibility for tables */
+
+@media only screen and (orientation: landscape) {
+  /* Specific visibility for tables */
+}
+
+@media only screen and (orientation: portrait) {
+  /* Specific visibility for tables */
+}
+
+/* Touch-enabled device targeting */
+
+/* Specific visibility for tables */
+
+/*
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  a[href^="#"]:after {
+    content: "";
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+/* Print visibility */
+
+/*
+SMALL (BASE) SIZE
+These are the small/base styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+
+/******************************************************************
+
+Stylesheet: Base/Small Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+html {
+  font-size: 100%;
+}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+/* for sites that are read right to left (i.e. hebrew) */
+
+/* home page */
+
+/* blog template page */
+
+/* archive page */
+
+/* date archive page */
+
+/* replace the number to the corresponding page number */
+
+/* search page */
+
+/* search result page */
+
+/* no results search page */
+
+/* individual paged search (i.e. body.search-paged-3) */
+
+/* 404 page */
+
+/* single post page */
+
+/* individual post page by id (i.e. body.postid-73) */
+
+/* individual paged single (i.e. body.single-paged-3) */
+
+/* attatchment page */
+
+/* individual attatchment page (i.e. body.attachmentid-763) */
+
+/* style mime type pages */
+
+/* author page */
+
+/* user nicename (i.e. body.author-samueladams) */
+
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+
+/* category page */
+
+/* individual category page (i.e. body.category-6) */
+
+/* replace the number to the corresponding page number */
+
+/* tag page */
+
+/* individual tag page (i.e. body.tag-news) */
+
+/* replace the number to the corresponding page number */
+
+/* custom page template page */
+
+/* individual page template (i.e. body.page-template-contact-php */
+
+/* replace the number to the corresponding page number */
+
+/* parent page template */
+
+/* child page template */
+
+/* replace the number to the corresponding page number */
+
+/* if user is logged in */
+
+/* paged items like search results or archives */
+
+/* individual paged (i.e. body.paged-3) */
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+/*********************
+LINK STYLES
+*********************/
+
+a,
+a:visited {
+  /*adds highlight on hover */
+  /* on click */
+  /* mobile tap color */
+}
+
+a:link,
+a:visited:link {
+  /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 P STYLES
+******************************************************************/
+
+h1 {
+  /*
+  if you're going to use webfonts, be sure to check your weights
+  http://css-tricks.com/watch-your-font-weight/
+  */
+  /* removing text decoration from all headline links */
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header ul.off-canvas-list li {
+  list-style: none;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.off-canvas-list ul {
+  margin-left: 0;
+}
+
+.off-canvas-list ul li a {
+  border-bottom: 0px;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* end .hentry */
+
+/* want to style individual post classes? Booya! */
+
+/* post by id (i.e. post-3) */
+
+/* general post style */
+
+/* general article on a page style */
+
+/* general style on an attatchment */
+
+/* sticky post style */
+
+/* hentry class */
+
+/* style by category (i.e. category-videos) */
+
+/* style by tag (i.e. tag-news) */
+
+/* post meta */
+
+/* entry content */
+
+/* end .entry-content */
+
+/* end .wp-caption */
+
+/* image gallery styles */
+
+/* end .gallery */
+
+/* gallery caption styles */
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+
+/* end .commentlist */
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+/* comment submit button */
+
+/* comment form title */
+
+/* cancel comment reply link */
+
+/* logged in comments */
+
+/* allowed tags */
+
+/* no comments */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+  clear: both;
+  margin-top: 1em;
+}
+
+/*
+if you checked out the link above:
+http://www.alistapart.com/articles/organizing-mobile/
+you'll want to style the footer nav
+a bit more in-depth. Remember to keep
+it simple because you'll have to
+override these styles for the desktop
+view.
+*/
+
+/* end .footer-links */
+
+/*********************
+FOUNDATION STYLES
+*********************/
+
+/*********************
+PLUGIN STYLES
+*********************/
+
+/*
+MEDIUM
+*/
+
+@media only screen and (min-width: 40.063em) {
+  /******************************************************************
+  
+  Stylesheet: Medium Stylesheet
+  
+  Styles apply to 40.063em and up.
+  
+  ******************************************************************/
+
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+
+  /* entry content */
+
+  /* end .entry-content */
+
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+
+  /*********************
+  FOOTER STYLES
+  *********************/
+
+  /*
+  check your menus here. do they look good?
+  do they need tweaking?
+  */
+
+  /* end .footer-links */
+
+  /*********************
+  FOUNDATION STYLES
+  *********************/
+
+  /*********************
+  PLUGIN STYLES
+  *********************/
+}
+
+/*
+LARGE
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+
+@media only screen and (min-width: 64.063em) {
+  /******************************************************************
+  
+  Stylesheet: Large Stylesheet
+  
+  Styles apply to 64.063em and up.
+  
+  ******************************************************************/
+
+  /*********************
+  GENERAL STYLES
+  *********************/
+
+  html {
+    font-size: 115%;
+  }
+
+  /*********************
+  LAYOUT & GRID STYLES
+  *********************/
+
+  /*********************
+  HEADER STYLES
+  *********************/
+
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+
+  /* links widget */
+
+  /* meta widget */
+
+  /* pages widget */
+
+  /* recent-posts widget */
+
+  /* archives widget */
+
+  /* tag-cloud widget */
+
+  /* calendar widget */
+
+  /* category widget */
+
+  /* recent-comments widget */
+
+  /* search widget */
+
+  /* text widget */
+
+  /*********************
+  FOOTER STYLES
+  *********************/
+
+  /*
+  you'll probably need to do quite a bit
+  of overriding here if you styled them for
+  mobile. Make sure to double check these!
+  */
+
+  /* end .footer-links */
+
+  /*********************
+  FOUNDATION STYLES
+  *********************/
+
+  /*********************
+  PLUGIN STYLES
+  *********************/
+}
+
+/*
+XLARGE
+*/
+
+@media only screen and (min-width: 90.063em) {
+  /******************************************************************
+  
+  Stylesheet: X-Large Stylesheet
+  
+  Styles apply to 90.063em and up.
+  
+  
+  ******************************************************************/
+
+  html {
+    font-size: 115%;
+  }
+}
+
+/*
+XXLARGE
+*/
+
+@media only screen and (min-width: 120.063em) {
+  /******************************************************************
+  
+  Stylesheet: XX-Large Stylesheet
+  
+  Styles apply to 120.063em and up.
+  
+  ******************************************************************/
+}
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Retina Screens & Devices Stylesheet
+  
+  When handling retina screens you need to make adjustments, especially
+  if you're not using font icons. Here you can add them in one neat
+  place.
+  
+  ******************************************************************/
+
+  /* 
+  
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */
+}
+
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+
+@media print {
+  /******************************************************************
+  
+  Stylesheet: Print Stylesheet
+  
+  This is the print stylesheet. There's probably not a lot
+  of reasons to edit this stylesheet. If you want to
+  though, go for it.
+  
+  ******************************************************************/
+
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    -webkit-filter: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  a:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+  }
+
+  a[href^="#"]:after {
+    content: "";
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+a::hover .circle-icon span {
+  margin: -6px 14px;
+  width: 132px;
+  height: 132px;
+}
+
+/*
+MEDIUM
+*/
+
+@media only screen and (min-width: 40.063em) {
+  /*
+  .parallax {
+    perspective: 2px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective-origin-x: 100%;
+  }
+  img.parallax__layer {
+  	display: block;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin-x: 100%;
+  
+  }
+  .parallax__group {
+    position: relative;
+    transform-style: preserve-3d;
+    height: auto;
+  
+    display: block;
+    width: 100%;
+  
+  
+    //debug
+    //transform: translate3d(200px, 0, -600px) rotateY(30deg);
+  }
+  .parallax__layer--base {
+    transform: translateZ(0);
+  }
+  .parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+    z-index: -100;
+  }
+  .parallax__layer--deep {
+    transform: translateZ(-2px) scale(3);
+    z-index: -200;
+  }
+  
+  
+  
+  
+  
+  
+  .header,
+  .footer {
+  	position: relative;
+  	z-index: 100;
+  }
+  */
+}
+
+.bg-navy {
+  background-color: #102233;
+  color: #FFF;
+}
+
+.social-icon {
+  font-size: 2.5em;
+  line-height: 1em;
+  padding: 0px;
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon span {
+  display: none;
+}
+
+.right i[class*='fi-'] {
+  padding-right: 0px;
+  padding-left: .5em;
+}
+
+.gapless {
+  line-height: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: inherit;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+i[class*="fi-"] {
+  padding-right: .5em;
+}
+
+footer.footer {
+  margin: 0px;
+  padding: 30px 0px;
+  color: #777;
+}
+
+footer.footer a {
+  color: #b8b8b8;
+  opacity: .5;
+}
+
+footer.footer a:hover {
+  opacity: 1;
+}
+
+.header {
+  background-color: #FFF;
+}
+
+.super-header {
+  background-color: #555555;
+  position: relative;
+  z-index: 100;
+}
+
+.super-header ul {
+  float: right;
+  margin: 0px;
+}
+
+.super-header li {
+  display: inline-block;
+}
+
+.super-header a {
+  font-family: "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #cccccc;
+  padding: 0px 0px 0px 15px;
+}
+
+.super-header a:hover {
+  color: #FFF;
+}
+
+#logo {
+  line-height: 70px;
+  position: relative;
+  top: 2px;
+}
+
+#logo a {
+  display: block;
+}
+
+.slam-top-bar-section {
+  font-family: "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.slam-top-bar-section li {
+  display: inline-block;
+}
+
+.slam-top-bar-section a {
+  display: inline-block;
+  margin: 0px 15px;
+  padding: 0px 0px;
+  line-height: 70px;
+  font-size: 1.3rem;
+  color: #555555;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.slam-top-bar-section a:hover {
+  padding: 0px 15px;
+  margin: 0px 0px;
+  background-color: #056bcd;
+  color: #FFF;
+}
+
+body {
+  background-color: #102233;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 100%;
+}
+
+#content {
+  background-color: #FFF;
+}
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+/** RESET AND LAYOUT
+===================================*/
+
+/** THEME
+===================================*/
+
+/* LOADER */
+
+/* PAGER */
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+/* AUTO CONTROLS (START / STOP) */
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+/* IMAGE CAPTIONS */
+
+/*** uncss> filename: http://foobar.click/grsauctions.dev/wp-content/themes/grsauctions/library/css/icons/foundation-icons.css?ver=2.0(Sass) ***/
+
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("foundation-icons.eot");
+  src: url("foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("foundation-icons.woff") format("woff"),
+       url("foundation-icons.ttf") format("truetype"),
+       url("foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi-marker:before,
+.fi-print:before,
+.fi-social-facebook:before,
+.fi-social-instagram:before,
+.fi-social-vimeo:before,
+.fi-social-youtube:before,
+.fi-telephone:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-marker:before {
+  content: "\f172";
+}
+
+.fi-print:before {
+  content: "\f19f";
+}
+
+.fi-social-facebook:before {
+  content: "\f1c4";
+}
+
+.fi-social-instagram:before {
+  content: "\f1cd";
+}
+
+.fi-social-vimeo:before {
+  content: "\f1e5";
+}
+
+.fi-social-youtube:before {
+  content: "\f1ea";
+}
+
+.fi-telephone:before {
+  content: "\f1f8";
+}

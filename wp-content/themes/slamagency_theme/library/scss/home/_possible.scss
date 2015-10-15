@@ -1,0 +1,28 @@
+// -----------------------------------------------------------
+// More Than Possible
+// -----------------------------------------------------------
+
+.centered {
+	margin: 0 auto;
+	//position: absolute;
+	//top: 50%;
+	//transform: tranlateY(-50%);
+}
+
+
+#more-than-possible {
+	//@extend .centered;
+	margin: 0 auto;
+	display: block;
+	margin-top: 20vh;
+
+}
+
+hr.short {
+	border-color: inherit;
+	max-width: 60%;
+	margin: 1em auto;
+	height: 3px;
+	border-top-width: 3px;
+
+}

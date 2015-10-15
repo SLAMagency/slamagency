@@ -1,0 +1,32 @@
+.find-us .circle {
+	background-color: rgba(255,255,255,.85);
+	border-radius: 50%;
+	border: 3px solid $blue;
+	height: 0px;
+	width: 100%;
+	padding-bottom: 100%;
+	text-align: center;
+	color: $gray;
+	position: relative;
+
+	h3 {
+		color: $blue;
+		line-height: 1em;
+	}
+}
+
+.find-us-place {
+	font-family: $header-thin;
+	font-size: 1.6rem;
+	line-height: 1em;
+}
+
+.find-us-time h4 {
+	display: inline-block;
+	line-height: 1em;
+	margin: 0px;
+	&.time {
+		font-family: $header-font;
+		color: $blue;
+	}
+}

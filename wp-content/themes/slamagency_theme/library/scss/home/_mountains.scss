@@ -1,0 +1,157 @@
+
+/*********************
+MOUNTAINS
+*********************/
+
+// $mint:			#A6DCD1;
+// $gray:			#797878;
+// $gray:			#333344;
+// $green:			#0EC783;
+// $orange:		#eb7f49;
+// $dark-blue:		#333344;
+// $blue: 			rgb(0, 147, 177);
+
+// $magenta: 		#FF0077;
+
+///$orange:		$magenta;  
+
+#mountains {
+	height: 650vh;
+	overflow: hidden;
+	@include css-gradient-3($blue, $sky, #FFF);
+	//@include css-gradient($gray, #FFF);
+	//background-color: rgba($gray,.5);
+	color: #FFF;
+	z-index: -100;    
+}
+
+#mountain_container {
+	height: 50vh;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	opacity: 0;
+
+	&.visible {
+		transition: opacity .5s;
+		opacity: 1;
+	}
+	
+}
+
+
+
+.mountain {
+	position: absolute;
+	bottom: 0px;
+	height: 40vh;
+	left: 50%;
+	transform: translateX(-50%) scale3D(1,1,1) rotateX(0.02deg);
+
+	&:nth-child(0) {
+		z-index: 10;
+	}
+	&:nth-child(1) {
+		z-index: 9;
+	}
+	&:nth-child(2) {
+		z-index: 8;
+	}
+	&:nth-child(3) {
+		z-index: 6;
+	}
+	&:nth-child(4) {
+		z-index: 5;
+	}
+	&:nth-child(5) {
+		z-index: 4;
+	}
+
+}
+
+.mountain_text {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 6rem;
+	transform: translateY(-100%);
+	line-height: .7em;
+	letter-spacing: 1px;
+
+	.small {
+		display: block;
+		font-weight: 100;
+		font-size: .25em;
+	}
+}
+
+#mountain_text_1 span {
+	
+	opacity: 0;
+
+	&.small {
+		letter-spacing: 20px;
+	}
+	&.big {
+		letter-spacing: -1px;
+	}
+}
+
+
+.mountain_text_1 {
+	top: 50vh;
+}
+.mountain_text_2 {
+	top: 300vh;
+}
+.mountain_text_3 {
+	top: 550vh;
+	z-index: 0;
+	color: #000;
+	transform: translateY(-50%);
+}
+
+.onTop {
+	z-index: 100;
+}
+
+
+.orange-path {
+	stroke: $magenta;
+}
+
+.yellow-line {
+	background-color: $magenta;
+	width: 10px;
+	position: absolute;
+	left: 50%;
+	top: 130%;
+	margin-left: -5px;
+	height: 0px;
+}
+
+
+.yellow-line_2 {
+	height: 40vh;
+	width: 16px;
+	margin-left: -8px;
+}
+
+#rays {
+	position: fixed;
+	top:-50px;
+	left: -50px;
+	z-index: -90;
+	opacity: 0;
+
+}
+
+#clouds {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	opacity: 1;
+}

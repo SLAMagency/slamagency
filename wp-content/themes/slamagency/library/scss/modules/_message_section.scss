@@ -1,0 +1,48 @@
+
+.message-section  {
+	position: relative;
+
+	.linked-play-button.loading {
+		background: rgba($green,.5) url('../images/loading.gif') no-repeat center center;
+		i {
+			
+		}
+	}
+
+	.message-section-content {
+		position: relative;
+		z-index: 100;
+	}
+
+	.section_background_image {
+		transition: filter .2s, opacity .2s;
+	}
+
+	.video-loading {
+		background: url('../images/loading.gif') no-repeat center center;
+	}
+
+	&.active {
+
+
+		.section_background_image {
+			filter: grayscale(100%);
+			opacity: .15;
+		}	
+
+		iframe,
+		.flex-video {
+			display: block;
+			margin: 0px auto;
+			z-index: 100;
+			position: relative;
+			//margin: 60px;
+		}
+		.message-section-content {
+			display: none;
+		}
+
+
+	}
+
+}

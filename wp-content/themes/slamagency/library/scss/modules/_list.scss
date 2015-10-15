@@ -1,0 +1,261 @@
+.info-item {
+	&:after {
+		content: ' ';
+	}
+}
+
+.block img {
+	width: 100%;
+	height: auto;
+}
+
+.fullwidth {
+
+	& > .row > .columns {
+		padding: 0px;
+	}
+
+	[class*="block-grid-"] {
+		margin: 0px;
+	}
+}
+
+[class*="block-grid-"] > li.block.overlay {
+
+	//padding: 0px;
+	.no-padding.fullwidth & {
+		padding: 0px;
+	}
+
+	a {
+		display: block;
+		position: relative;
+		background-color: #781d1e;
+		overflow: hidden;
+	}
+
+	// &:before {
+	// 	content: '';
+	// 	@extend .overlay;
+	// 	background-color: rgba(#781d1e, .5);
+	// 	z-index: 1;
+	// }
+
+	img {
+		opacity: .6;
+	}
+
+	&:hover {
+		img {
+			opacity: .4;
+		}
+		.date {
+			
+		}
+	}
+
+	.info {
+
+		position: absolute;
+		color: $white;
+		z-index: 10;
+		width: 100%;
+		top: 0px;
+		bottom: 0px;
+		padding: 3%;
+
+
+	}
+
+	.info-item {
+		//@extend .h3;
+		
+		display: block;
+		text-align: left;
+		line-height: .9em;
+		text-align: left;
+	}
+
+
+
+	.date .space {
+		display: none;
+	}
+
+	.info-item.date, a .info-item.date {
+		
+		color: #FFF;
+	}
+
+	.info-item.title
+	{
+		bottom: 3%;
+		position: absolute;
+		font-size: 2em;
+		max-width: 60%;
+		text-align: left;
+	}
+
+
+
+	.info-item.time {
+		display: none;
+	}
+
+	@media #{$medium-up}{
+		.info-item.time {
+			display: block;
+			bottom: 3.2%;
+			position: absolute;
+			font-family: $header-thin;
+			font-size: 2em;
+			right: 3%;
+		}	
+	}
+
+
+
+
+	.month {
+
+		font-family: $header-thin;
+	}
+	.day {
+		font-family: $header-font;
+	}
+	
+}
+
+// Circle
+[class*="block-grid-"] > li.circle {
+	padding: 20px;
+	.info-item.title {
+		color: #444;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+}
+li.circle {
+	text-align: center;
+
+
+	img {
+		border-radius: 50%;
+		transition: .2s;
+		border: 0px solid rgba($green,1);
+	}
+	a:hover img {
+		border: 3px solid rgba($green,1);
+		opacity: .8;
+		transition: .2s;
+	}
+
+	.info span.info-item {
+		display: block;
+	}
+
+	.info-item.content {
+		background-color: transparent;
+		color: $gray !important;
+	}
+}
+
+
+// Block
+[class*="block-grid-"] > li.block {
+	a {
+		display: block;
+		position: relative; 
+	}
+	
+	.info {
+		padding-top: 10px;
+	}
+
+
+
+	.info-item, & a:hover .info-item {
+		color: inherit;
+
+	}
+
+	.info-item.date {
+		text-transform: uppercase;
+		font-size: 2em;
+		line-height: 1em;
+		letter-spacing: 2px;
+		color: #FFF;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.date .space {
+		display: none;
+	}
+
+	.month {
+
+		font-family: $header-thin;
+	}
+	.day {
+		font-family: $header-font;
+	}
+}
+
+
+
+.list {
+	max-width: 100%;
+}
+
+.fullwidth .list {
+
+}
+
+ul.fill[class*="block-grid-"] {
+	margin: 0px;
+	&>li {
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+.list.event {
+	list-style: none;
+	text-transform: uppercase;
+	margin-left: 0px;
+
+
+	li {
+		@extend .clearfix;
+		margin-bottom: .5em;
+		cursor: pointer;
+	}
+
+	.date {
+		margin-right: .5em;
+		.day {
+			font-weight: bold;
+		}
+		.month {
+			font-weight: 300;
+		}
+	}
+
+	
+
+	.title {
+		display: block;
+		font-size: 1.3em;
+		line-height: 1em;
+		color: rgba($white, .75);
+	}
+
+	a:hover .title {
+		color: #FFF;
+	}
+
+}
+
+

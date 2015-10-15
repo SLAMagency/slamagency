@@ -1,0 +1,174 @@
+
+
+.slam_section {
+
+}
+
+.slam_section_content {
+
+}
+
+
+section.full-height {
+	min-height: 100vh;
+	position: relative;
+	max-width: 100%;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+// Opacity Settings
+.has_image {
+	overflow-y: hidden; 
+	position: relative;
+}
+.section_background_image {
+	&.opaque {
+		opacity: 1;
+	}
+	&.fade-85 {
+		opacity: .85; 
+	}
+	&.fade-50 {
+		opacity: .5;
+	}
+	&.fade-15 {
+		opacity: .15;
+	}
+}
+
+// .parallax .section_background_image {
+// 	transition: .05s;
+// }
+
+.section_background_img {
+	position: absolute;
+	width: 100%;
+	top: -50%;
+
+}
+
+.section_background_div {
+	position: absolute; 
+	left:0px;
+	right:0px;
+	top: -100px;
+	bottom: -100px;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.attachment-top {
+	.section_background_div {
+		background-position: top center;
+	}
+}
+
+// Padding Settings
+.no-padding {
+	padding: 0px;
+}
+.thin-padding {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.normal-padding {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}	
+.thick-padding {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.mega-padding {
+	padding-top: 240px;
+	padding-bottom: 240px;
+} 
+
+// Content Width Settings
+.fullwidth .row {
+	max-width: 100%;
+	//padding-left:	rem-calc(20);
+	//padding-right:	rem-calc(20);
+	padding: 0px;
+}
+
+.fullwidth > .row > .columns.small-12 {
+	padding: 0px;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+@media #{$large-up}{
+	.popover {
+		margin-top: -120px;
+		margin-bottom: -120px;
+
+		.thick-padding & {
+			margin-top: -150px;
+			margin-bottom: -150px;
+		}
+		.thin-padding & {
+			margin-top: -60px;
+			margin-bottom: -60px;
+		}
+		.no-padding & {
+			margin-top: -30px;
+			margin-bottom: -30px;
+		}
+	}
+}
+
+.paddingless {
+	padding: 0px;
+}
+
+.side-padding {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+
+
+// Content Width Settings
+.fullwidth.row {
+	max-width: 100%;
+	margin: 0px;
+}
+
+ 
+.fullwidth.row,
+.fullwidth.slam_section_content > .row  {
+	max-width: 100%;
+	//padding-left:	rem-calc(20);
+	//padding-right:	rem-calc(20);
+	
+}
+
+.slam_section_content.two-thirds > .row > .columns {
+	@extend .medium-8;
+	@extend .small-centered;
+	margin: 0px auto;
+}
+
+.slam_section_content.half > .row > .columns {
+	@extend .medium-6;
+	@extend .small-centered;
+	margin: 0px auto;
+}
+
+

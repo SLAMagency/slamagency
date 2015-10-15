@@ -1,0 +1,100 @@
+
+.button,
+.akbutton {
+	
+
+
+	border: 2px solid #FFF;
+	border-color: inherit;
+	color: inherit;
+	background: transparent;
+
+	font-family: $header-thin;
+	font-weight: 300;
+	line-height: 1.5rem;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	padding: 5px 30px;
+	border-radius: 1000px;
+
+	transition: .2s;
+
+
+	&.tiny {
+		padding: 1px 10px;
+	}
+
+	&.no-margin {
+		margin: 0px;
+	}
+
+	.bg-white & {
+		color: $primary-color;
+		&:hover {
+			background-color: $primary-color;
+			border-color: $primary-color;
+			color: #FFF;
+		}
+	}
+
+	.bg-blue & {
+		&:hover {
+			border-color: #FFF;
+			background-color: #FFF;
+			color: $blue;
+		}
+	}
+
+}
+
+
+
+.button.green {
+	color: #FFF;
+	background-color: rgba($green, .5);
+	&:hover {
+		background-color: $green;
+	}
+}
+
+.button.small {
+	font-size: 1em;
+	line-height: 1em;
+	padding: 5px 15px;
+}
+
+
+.button.large {
+	line-height: 2rem;
+	font-size: 1.25em;
+	padding: 5px 30px;
+}
+
+.wpcf7-submit {
+	@extend .button;
+	color: inherit;
+}
+
+.button.icon-button {
+	font-size: 1em;
+	line-height: 2em;
+	text-align: center;
+	width: 2em;
+	height: 2em;
+	padding: 0px;
+	&.big {
+		font-size: 2em;
+		width: 2em;
+		height: 2em;
+	}
+}
+
+.rotate-90 {
+	transform: rotate(90deg);
+	display: block;
+}
+
+a.social-icon {
+	color: #FFF;
+	font-size: 2em;
+}

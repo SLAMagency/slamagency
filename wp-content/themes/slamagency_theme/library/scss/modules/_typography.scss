@@ -1,0 +1,157 @@
+
+
+
+.gapless {
+	line-height: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: inherit;
+
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 2.5rem;
+	line-height: 1em;
+	&.bold {
+		font-weight: bold;
+	}
+}
+
+.team-list {
+
+	h5 {
+		margin-bottom: 0px;
+	}
+
+	.role {
+		opacity: .35;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .9em;
+		margin-bottom: 0px;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 50%;
+			margin: 0px auto 4px auto;
+			border-bottom: 1px solid;
+			border-color: inherit;
+		}
+	}
+
+}
+
+
+@media #{$medium-up}{
+	.pop-over {
+	
+		position: relative;
+		z-index: 30;
+
+		.thin-padding & {
+			margin-top: -60px;
+			margin-bottom: -60px;
+		}
+		.normal-padding & {
+			margin-top: -90px;
+			margin-bottom: -90px;
+		}
+
+	}
+}
+
+i[class*="fi-"] {
+	padding-right: .5em;
+}
+
+#home {
+	h1, h2 {
+		font-size: 5rem;
+		line-height: 1em;
+		margin-bottom: 0px;
+	}
+	font-family: $header-font;
+	font-weight: 100;
+	font-size: 2rem;
+	line-height: 1em;
+}
+
+.intro {
+	font-size: 1.2em;
+}
+
+#current-auctions {
+	h3 {
+		font-weight: bold;
+	}
+}
+
+.auction-title {
+	font-size: 2em;
+	line-height: 1em;
+}
+
+.slam_section_content ol {
+	li {
+		margin-bottom: .5em;
+		margin-top: .5em;
+	}
+
+}
+
+ol.process-list {
+	margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+    margin-left: 4em;
+
+    & > li {
+    	counter-increment: step-counter;
+    	position: relative;
+    	margin-bottom: 2em;
+
+
+    	&:before {
+    		content: counter(step-counter);
+    		font-family: $header-font;
+    		font-weight: bold;
+    		font-size: 1.5em;
+
+    		padding: 0px;
+    		line-height: 1.9em;
+    		box-sizing: border-box;
+    		width: 2em;
+    		height: 2em;
+
+    		display: block;
+    		border: 3px solid #FFF;
+    		border-color: inherit;
+    		text-align: center;
+    		border-radius: 50%;
+
+    		position: absolute;
+    		left: -3em;
+    	}
+    }
+}
+
+
+.columns-2 {
+	@media #{$medium-up}{
+		column-count: 2;
+	}
+}
+
+.columns-3 {
+	@media #{$large-up}{
+		column-count: 3;
+	}
+}

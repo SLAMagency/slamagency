@@ -1,0 +1,68 @@
+
+$header_height: 70px;
+
+.header {
+	background-color: #FFF;
+}
+
+.super-header {
+	background-color: $charcoal;
+	position: relative;
+	z-index: 100;
+	ul {
+		float: right;
+		margin: 0px;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		font-family: $header-font;
+		text-transform: uppercase;
+		color: $gray;
+		padding: 0px 0px 0px 15px;
+		&:hover {
+			color: #FFF;
+		}
+	}
+}
+
+#logo {
+	line-height: $header_height;
+	position: relative;
+	top: 2px;
+
+	a {
+		display: block;
+	}
+}
+
+#logo-svg {
+	height: 40px;
+	width: auto;
+}
+
+.slam-top-bar-section {
+	font-family: $header-font;
+	text-transform: uppercase;
+	li {
+		display: inline-block;
+	}
+	a {
+		display: inline-block;
+		margin: 0px 15px;
+		padding: 0px 0px;
+		line-height: $header_height;
+		font-size: 1.3rem;
+		color: $charcoal;
+		transition: .15s;
+	
+		&:hover {
+			
+			padding: 0px 15px;
+			margin: 0px 0px;
+			background-color: $primary-color;
+			color: #FFF;
+		}
+	}
+}

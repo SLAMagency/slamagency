@@ -1,0 +1,70 @@
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+	//padding: 1.5em;
+	border-radius: 4px;
+	padding: 5px 30px;
+	margin-bottom: 5px;
+
+	background-color: transparent;
+	color: inherit;
+	border: 1px solid #FFF;
+	border-color: inherit;
+
+	&:active, &:focus {
+		background-color: rgba($primary-color, .25);
+	}
+}
+
+input[type="submit"] {
+	@extend .button;
+}
+
+#searchform {
+	label {
+		display: none;
+	}
+	margin: 8px 0px;
+	input {
+		margin: 0px;
+	}
+	.button {
+		background-color: $primary-color;
+	}
+}
+
+form textarea {
+	height: 100px;
+}
+ 
+form span.wpcf7-list-item {
+	margin-left: 0px;
+	margin-right: 1em;
+	display: block;
+	float: left;
+}
+
+form .wpcf7-form-control-wrap {
+	display: block;
+	padding-top: .25em;
+}
+
+form label {
+	color: inherit;
+}
+
+form hr {
+	margin: .6em 0px;
+}

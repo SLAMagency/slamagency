@@ -1,0 +1,25 @@
+.overlay {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	//z-index: -1;
+}
+
+.background-cover {
+	background-size: cover;
+
+}
+
+.grayscale {
+	filter: grayscale(100%);
+}
+
+.blur {
+	filter: blur(10px);
+}
+
+.grayscale.blur {
+	filter: blur(10px) grayscale(50%);
+}

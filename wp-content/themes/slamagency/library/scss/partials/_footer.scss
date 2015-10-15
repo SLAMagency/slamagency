@@ -1,0 +1,136 @@
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+
+	position: relative;
+	background: $gray;
+
+	a {
+		color: rgba(#FFF, .5);
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+}
+
+
+.footer-links {
+
+	ul {
+
+		li {}
+
+	}
+
+} /* end .footer-links */
+
+
+.logo-gray {
+
+	position: absolute;
+	background: url('../images/logo-grays.svg') no-repeat center center;
+	width: 100px;
+	height: 100px;
+	left: 50%;
+	margin-left: -50px;
+	top: -30px;
+}
+
+#bottom-footer {
+	position: relative;
+	padding: 3em 0px;
+	font-size: 1rem;
+	color: rgba(#FFF,.3);
+	background-color: $dark-gray;
+
+	
+
+	a {
+		color: rgba(#FFF,.3);
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	#footer-contact-info {
+		a {
+			
+			line-height: 2em;
+			i {
+				width: 1em;
+				display: inline-block;
+			}
+		}
+	}
+
+
+}
+/*
+.footer-logo {
+	opacity: .1;
+	text-align: center;
+	margin: -5px auto;
+	display: block;
+	&:hover {
+		opacity: .25;
+	}
+}*/
+
+	.bottom-widget {
+		a img {
+			opacity: .2;
+			transition: .3s;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	.artspeak-design {
+		margin: 30px auto;
+		margin-bottom: 0px;
+		display: block;
+		span {
+			display: none;
+		}
+		background: url('../images/artspeak-design.png');
+		width: 55px;
+		height: 25px;
+		opacity: .1;
+		@include transition(.6s);
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	.social-media {
+		font-size: 3rem;
+		line-height: 0rem;
+		list-style: none;
+		@media #{$large-up}{
+			float: right;
+		}
+		li {
+			float: left;
+		}
+		li:nth-child(n) {
+			padding-right: 10px;
+		}
+		a {
+			span {
+				display: none;
+			}
+			
+		}
+	}
+
+	.copyright {
+		@media #{$large-up}{
+			float: right;
+		}
+	}
+

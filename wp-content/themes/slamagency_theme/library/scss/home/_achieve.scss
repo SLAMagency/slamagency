@@ -1,0 +1,159 @@
+// -----------------------------------------------------------
+// Achieve Section
+// -----------------------------------------------------------
+
+.bigtext {
+	max-width: 300px;
+	opacity: 0;
+	transition: .2s;
+	&.visible {
+		opacity: 1;
+	}
+}
+
+#achieve {
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px;
+
+	.achieve-bg {
+		height: 110vh;
+		width: 200vw;
+		background: url('../img/lights.jpg') repeat-x center center;
+		//background-size: cover;
+	}
+
+	canvas { width: 100%; height: 100% } 
+	position: relative;
+	font-family: 'Oswald';
+	.achievement {
+		font-size: 100px;
+		font-family: "Oswald", sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1em;
+		padding: 60px;
+		padding-bottom: 0px;
+		color: #FFF;
+		background-color: rgba($mint, .9); //$orange; //#A6DCD1;
+		position: relative;
+		-webkit-transition: background-color .2s;
+		transition: background-color .2s;
+
+
+	}
+
+	.achievement:after {
+		content: '';
+		position: absolute;
+		top:100%;
+		left: 0;
+		right: 0;
+		border: 60px solid $mint; //$orange; //#A6DCD1;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		
+		-webkit-transition: border-color .2s;
+		transition: border-color .2s;
+	}
+
+	.hover-achievement:hover {
+		-webkit-transition: .2s;
+		background-color: #000;
+	}
+
+	.hover-achievement:hover:after {
+		border-top-color: #000;
+		border-left-color: #000;
+	}
+
+	.achievement a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	// .section {
+	// 	height: 100vh;
+	// 	position: relative;
+	// }
+
+	.achieve > div {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+
+ 
+
+	h1 {
+		font-family: 'Oswald';
+		text-align: center;
+		position: absolute;
+		width: 25%;
+		max-width: 300px;
+		left: 50%;
+		text-transform: uppercase;
+		font-size: 6rem;
+		top: 50%;
+		-webkit-transform: 	translateY(-50%) translateX(-50%);
+		transform: 			translateY(-50%) translateX(-50%);
+		z-index: 100;
+		margin: 0px;
+		
+	}
+	h1 span {
+		line-height: 1em;
+	}
+
+	h1 span.light {
+		font-family: "Oswald-light";
+		font-weight: 100;
+	}
+
+
+
+	.gray {
+		color: #797878;
+	}
+
+	.whitebox {
+		background-color: rgba(255,255,255,.9);
+		padding: 50px;
+	}
+	.graybox {
+		background-color: rgba(70,70,70,.9);
+		color: #FFF;
+		padding: 50px;
+	}
+}
+.next {
+	color: #A6DCD1;
+	position: relative;
+	h1 {
+		text-align: center;
+		position: absolute;
+		width: 25%;
+		max-width: 300px;
+		left: 50%;
+		text-transform: uppercase;
+		font-size: 6rem;
+		top: 50%;
+		-webkit-transform: 	translateY(-50%) translateX(-50%);
+		transform: 			translateY(-50%) translateX(-50%);
+		z-index: 100;
+		margin: 0px;
+		font-family: "Oswald";
+		
+	}
+	h1 span.light {
+		font-family: "Oswald-light";
+		font-weight: 100;
+	}
+	h1 span {
+		line-height: 1em;
+	}
+}

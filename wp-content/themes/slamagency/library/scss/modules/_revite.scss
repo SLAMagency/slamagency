@@ -1,0 +1,105 @@
+
+
+// .anidraw {
+//   svg path,
+//   svg polygon {
+//     //fill: #FFF;
+//     transition: .6s;
+//     stroke: transparent;
+//     stroke-dasharray: 0,100;
+//   }
+//   &:hover {
+//     svg path,
+//     svg polygon {
+//       stroke: #FFF;
+//       stroke-dasharray: 100,0; 
+//     }
+//   }
+// }
+
+
+.revite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+  overflow: hidden;
+  svg {
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  z-index: 0;
+}
+
+.revite-text {
+  font-weight: bold;
+  font-style: italic;
+  @media #{$medium-up}{
+      font-size: 12vh;
+  }
+  line-height: 1em;
+  
+
+}
+
+.ontop {
+  position: relative;
+  z-index: 10;
+}
+
+.anidraw {
+
+  transform-origin: 50% 50%;
+  perpective: 100px;
+
+  svg path,
+  svg polygon {
+
+    animation-name: strokedraw;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+    transform-style:preserve-3d;
+
+    transition: 2s;
+
+    
+
+
+    &:nth-child(2n+0) {
+      animation-duration: 18s;
+      animation-delay: -6s;
+    }
+
+    &:nth-child(3n+0) {
+      animation-duration: 26s;
+      animation-delay: -3s;
+    }
+
+    &:nth-child(5n+1) {
+      animation-duration: 40s;
+      animation-delay: -3s;
+    }
+
+    &:nth-child(7n+0) {
+      animation-duration: 10s;
+      animation-delay: -2.5s;
+    }
+
+
+  }
+}
+
+
+// @keyframes strokedraw {
+//     0%   {stroke: transparent; fill:rgba($blue, 0.1); transform: scale3d(1,1,1); stroke-width: 1; stroke-dasharray: 0,100; }
+//     50%  {stroke: #FFF;        fill:rgba($blue, 1.0); transform: scale3d(2,2,2); stroke-width: .5; stroke-dasharray: 100,0;}
+//     100% {stroke: #FFF;        fill:rgba($blue, 0.1); transform: scale3d(1,1,1); stroke-width: 1; stroke-dasharray: 0,100, 0,0;}
+// }
+
+@keyframes strokedraw {
+    0%   {stroke: #FFF; fill:rgba($blue, 1.0); transform: scale3d(1,1,1); stroke-width: 1; stroke-dasharray: 0,100; }
+    50%  {stroke: $blue;        fill:rgba($blue, 0.1); transform: scale3d(3,3,3); stroke-width: .3; stroke-dasharray: 100,0;}
+    100% {stroke: #FFF;        fill:rgba($blue, 1.0); transform: scale3d(1,1,1); stroke-width: 1; stroke-dasharray: 0,100, 0,0;}
+}

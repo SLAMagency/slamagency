@@ -1,0 +1,38 @@
+.go-to-next {
+	background-color: #FFF;
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	&:before {
+		content: '';
+		border: 45px solid #FFF;
+		border-top: 26px solid transparent;
+		position: absolute;
+		border-bottom: 0px;
+		top: -26px;
+		left: 0px;
+	}
+	svg {
+		position: relative;
+		top: -6px;
+	}
+	
+	&.animated {
+		animation-name: bob;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+	}
+
+	&.gone {
+		transition: .3s;
+		bottom: 100%;
+	}
+	
+}
+
+@keyframes bob {
+	from {bottom: 0px;}
+	to {bottom: -20px;}
+}

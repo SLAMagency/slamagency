@@ -1,0 +1,132 @@
+a {
+	color: $primary-color;
+	&:hover {
+		
+	}
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	color: inherit;
+}
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h3, .h3 {
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+h4, .h4 {
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-bottom: 0px;
+	margin-top: 1em;
+}
+
+h5, .h5 {
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+h6, .h6 {
+	
+}
+
+.lead-section {
+
+	h1 {
+		font-size: 4rem;
+	}
+
+}
+
+
+.red-block {
+	background: rgba($red,.75);
+	display: inline-block;
+	padding: 3px 15px;
+	margin-left: 10px;
+	margi-right: 10px;
+}
+
+.blue-block {
+	background: rgba($blue,.75);
+	display: inline-block;
+	padding: 3px 15px;
+	margin-left: 10px;
+	margi-right: 10px;
+}
+
+.pop-title {
+	display: inline-block;
+	background-color: $primary-color;
+	color: #FFF;
+	font-size: 1.5em;
+	padding: 5px 30px;
+	border-radius: 100px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.center {
+	text-align: center;
+}
+
+h2.multiline {
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: .9em;
+	color: #FFF;
+	font-size: 10vh;
+	text-align: center;
+
+	span {
+		display:block;
+	}
+
+}
+
+ul.icon-list {
+	list-style: none;
+	position: relative;
+	margin-left: 0px;
+	li {
+		margin-left: 20px;
+	}
+	i:first-child {
+		position: absolute;
+		left: 0px;
+	}
+}
+
+.big {
+	font-size: 1.5em;
+}
+
+.text-columns {
+	column-count: 2;
+}
+
+
+
+.pop-right {
+	float: right;
+	margin-right: -50%;
+}
+
+.pop-left {
+	float: left;
+	margin-left: -50%;
+}

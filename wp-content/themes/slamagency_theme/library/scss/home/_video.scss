@@ -1,0 +1,67 @@
+// Looping background video
+// 
+
+
+.background-video {
+	background: $blue url('../img/hatch.png');
+}
+
+.bgvideoposter,
+video#bgVideo {
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+   
+    /*z-index: -100;  */  
+    /*background-size: cover;
+    background-position: center center;*/
+    transition: opacity 1s;
+    &.fadeout{
+        opacity: 0; 
+    }
+
+}
+
+.hatch-overlay {
+	content: '';
+	background-image: url('../img/hatch.png');
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+}
+
+@keyframes grow {
+    from {transform: translateX(-50%) translateY(-50%) scale3d(1,1,1);}
+    to {transform: translateX(-50%) translateY(-50%) scale3d(1.2,1.2,1.2);}
+}
+
+.bgvideoposter {
+    animation-name: grow;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+    transform: translateX(-50%) translateY(-50%) scale3d(1.2,1.2,1.2);
+
+}
+
+#time {
+	a {
+		color: $mint;
+	}
+}
+
+section.auto-height {
+	min-height: auto;
+	height: auto;
+}

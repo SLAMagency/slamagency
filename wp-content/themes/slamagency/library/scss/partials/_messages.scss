@@ -1,0 +1,46 @@
+/*********************
+Messages
+*********************/
+
+.message-content {
+	padding: rem-calc(16);
+	h6 {
+		font-family: $header-thin;
+		letter-spacing: 3px;
+	}
+}
+
+.message-series {
+	.tabs-content > .content {
+		padding: 0px;
+	}
+}
+
+.content.active {
+	.mejs-container, 
+	.mejs-embed, 
+	.mejs-embed body, 
+	.mejs-container .mejs-controls {
+		background: $blue;
+		/*
+		height: 60px;
+
+
+		
+		.mejs-time {
+		}
+		.mejs-time-rail {
+			padding-right: 56px;
+			margin-right: -56px;
+		}
+
+*/
+		.mejs-button {
+			
+			button {
+				background-image: url('../images/controls-white.svg');
+			}
+		}
+
+	}
+}
