@@ -13,6 +13,7 @@ section.full-height {
 	min-height: 100vh;
 	position: relative;
 	max-width: 100%;
+	z-index: 10;
 }
 
 .centered {
@@ -158,6 +159,8 @@ section.full-height {
 	//padding-right:	rem-calc(20);
 	
 }
+
+
 
 .slam_section_content.two-thirds > .row > .columns {
 	@extend .medium-8;

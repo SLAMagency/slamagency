@@ -12,11 +12,11 @@
 
 	);
 
-	$required_scripts = array_merge($required_scripts, $scripts);
+	//$required_scripts = array_merge($required_scripts, $scripts);
 
 ?>
 
-<section class="section next gray-bg" id="go">
+<section class="section next full-height bg-gray" id="go">
 	<div class="background-video">
 		<div class="hatch-overlay"></div>
 		<video id="bgVideo" class="show-for-medium-up" preload="auto" autoplay loop muted > 
@@ -25,7 +25,7 @@
 		    
 		   <!--  <source src="http://d199e1cq7z8hrp.cloudfront.net/lansing-background.webm" type="video/webm" > -->
 		    <!-- <source src="http://d199e1cq7z8hrp.cloudfront.net/lansing-background-720.mp4" type="video/mp4" > -->
-		    <source src="../library/video/slam-website-background_final.mp4" type="video/mp4" >
+		    <source src="<?php echo get_template_directory_uri(); ?>/library/video/slam-website-background_final.mp4" type="video/mp4" >
 		    <source src="https://s3.amazonaws.com/citylifelansing/lansing_background_720.ogv" type="video/ogg" >
 
 		    <!-- <source src="http://d199e1cq7z8hrp.cloudfront.net/lansing-background-720.mp4" type="video/mp4" > 
@@ -34,9 +34,9 @@
 		    
 		</video>  
 	</div>
-	<h1><div class='bigtext'><span>NOW</span><span class="light">IS YOUR TIME FOR</span><span>GREATNESS</span></div>
-		
-		<a href="#" data-reveal-id="video-modal"><i class="fi-play-circle"></i></a>
+	<!-- <h1><div class='bigtext'><span>NOW</span><span class="light">IS YOUR TIME FOR</span><span>GREATNESS</span></div>
+	 -->	
+	<a href="#" data-reveal-id="video-modal" id="video-play"><i class="fi-play-circle"></i></a>
 
 		<!-- <a href="#video">
 			
@@ -55,11 +55,11 @@
 			<polygon fill="#A6DCD1" points="0,34.72 34.89,52.47 69.79,34.72 69.79,0 "/>
 			</svg>
 		</a> -->
-	</h1>
-	<div class="clock hide-for-small">
+	<!-- </h1> -->
+<!-- 	<div class="clock hide-for-small">
 	  <div class="hour hand"></div>
 	  <div class="minute hand"></div>
 	  <div class="second hand"></div>
-	</div>
+	</div> -->
 
 </section>

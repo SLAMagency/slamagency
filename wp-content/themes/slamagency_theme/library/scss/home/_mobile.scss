@@ -1,0 +1,105 @@
+#mobile {
+
+	h1, h2 {
+		line-height: 1em;
+		font-size: 9vh; 
+
+	}
+
+	section {
+		padding: 15px;
+		padding-top: 80px;
+		overflow: hidden;
+		position: relative;
+		min-height: 100vh;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.bg-green {
+		background-color: $green;
+		color: #FFF;
+	} 
+
+	.bg-mint {
+		background-color: $mint;
+		color: #334;
+		a {
+			color: #FFF;
+		}
+	}
+
+	.bg-blue {
+		background-color: #334;
+		color: #FFF;
+	}
+
+	.bg-white {
+		background-color: #FFF;
+		color: #334;
+	}
+
+
+	.top-angle {
+		overflow: visible;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 0px;
+			height: 0px;
+			top: -30px;
+			left: 0px;
+			border-left: 100vw solid #FFF;
+			border-top: 30px solid transparent;
+		}
+	}
+
+
+	a.next {
+		display: inline-block;
+		transform: rotate(90deg);
+		font-size: 2em;
+		z-index: 50;
+	}
+
+}
+
+
+
+#mobile-mindset {
+	//background: url('../img/mobile-mountain.png') no-repeat bottom left;
+	.content {
+		//position: fixed;
+	}
+
+	.mobile-mountain {
+		position: absolute;
+		width: 691px;
+		min-width: 100%;
+		max-width: none;
+		bottom: 0px;
+		left: 0px;
+	}
+}
+
+#mobile-no-competition {
+
+	overflow: hidden;
+
+	.content {
+
+	}
+
+	.mobile-mountain {
+		position: absolute;
+		width: 691px;
+		min-width: 100%;
+		max-width: none;
+		bottom: 0px;
+		right: 0px;
+	}
+
+}

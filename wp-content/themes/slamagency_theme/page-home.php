@@ -59,13 +59,13 @@ Template Name: SLAM! Home
 	<!-- ––––––––––––––– -->
 	<div id="mobile" class="hide-for-medium-up">
 
-	    <section id="mobile-mindset" class='bg-green'>
+	    <section id="mobile-mindset" class='bg-blue'>
 	        <div class="content">
 	            <h2>What if you operated from a Different Mindset?</h2>
 	            <a class="next" href="#mobile-no-competition"><i class="fi-play-circle"></i></a>
 	        </div>
 	        
-	        <img src="library/images/mobile-mountain.png" class='mobile-mountain'>
+	        <img src="<?php echo get_template_directory_uri(); ?>/library/images/mobile-mountain.png" class='mobile-mountain'>
 	    </section>
 	    <section id="mobile-no-competition" class='bg-mint'>
 	        <div class="content text-right">
@@ -73,7 +73,7 @@ Template Name: SLAM! Home
 	            <a class="next" href="#mobile-destiny"><i class="fi-play-circle"></i></a>
 	        </div>
 	        
-	        <img src="library/images/mobile-mountain-blue.png" class='mobile-mountain'>
+	        <img src="<?php echo get_template_directory_uri(); ?>/library/images/mobile-mountain-blue.png" class='mobile-mountain'>
 	    </section>
 	    <section id="mobile-destiny" class='bg-blue'>
 	        <h2>A mindset where you create your own Destiny?</h2>
@@ -82,11 +82,84 @@ Template Name: SLAM! Home
 	    <section id="mobile-create" class="bg-white top-angle">
 	        <div class="content">
 	            <h2 class='bigtext'>I'ts more than possible.</h2>
-	            <p>When you create something that is uniquely yours, it cannont be taken away.</p>
-	            <h4>Now is your time for greatness.</h4>
+	            
+	            <h4>Here's how we do it.</h4>
 	            <a class="next" href="#video"><i class="fi-play-circle"></i></a>
 	        </div>
 	    </section>
+	    <section id="mobile-venn" class="bg-blue">
+	        <div class="content">
+	            <h2 class='bigtext'>This is creativity that drives results</h2>
+	            
+	            <h4>Art + Science + Intuition =</h4>
+	            <a class="next" href="#video"><i class="fi-play-circle"></i></a>
+	        </div>
+	    </section>
+	    <section id="mobile-video" class="bg-white top-angle">
+	        <div class="content">
+	            <h2 class='bigtext text-center'>Results</h2>
+	            <a href="#" data-reveal-id="video-modal" id="video-play"><i class="fi-play-circle"></i></a>
+	            
+	            
+	            
+	        </div>
+	    </section>
+	</div>
+
+	
+	<!-- ––––––––––––––– -->
+	<!-- Video Modal 1	  -->
+	<!-- ––––––––––––––– -->
+	<div id="video-modal" class="reveal-modal" data-reveal>
+	    <div class="video-wrapper ratio24">
+	        <iframe 
+	            id="video--home"
+	            class="video--wistia"
+	            src="//fast.wistia.net/embed/iframe/5ajp75g6fr?videoFoam=true"
+	            allowtransparency="true"
+	            frameborder="0"
+	            scrolling="no"
+	            class="wistia_embed"
+	            name="wistia_embed"
+	            allowfullscreen="allowfullscreen"
+	            mozallowfullscreen="mozallowfullscreen"
+	            webkitallowfullscreen="webkitallowfullscreen"
+	            oallowfullscreen="oallowfullscreen"
+	            msallowfullscreen="msallowfullscreen"
+	            style="width: 100%; height: 40vw"  
+	            >
+	        </iframe>
+	    </div>
+
+	  <a class="close-reveal-modal" href="javascript:;">&#215;</a>
+	</div>
+
+
+	<!-- ––––––––––––––– -->
+	<!-- Video Modal 2	  -->
+	<!-- ––––––––––––––– -->
+	<div id="reel-modal" class="reveal-modal" data-reveal>
+	    <div class="video-wrapper ratio24">
+	        <iframe 
+	            id="video--home"
+	            class="video--wistia"
+	            src="//fast.wistia.net/embed/iframe/5ajp75g6fr?videoFoam=true"
+	            allowtransparency="true"
+	            frameborder="0"
+	            scrolling="no"
+	            class="wistia_embed"
+	            name="wistia_embed"
+	            allowfullscreen="allowfullscreen"
+	            mozallowfullscreen="mozallowfullscreen"
+	            webkitallowfullscreen="webkitallowfullscreen"
+	            oallowfullscreen="oallowfullscreen"
+	            msallowfullscreen="msallowfullscreen"
+	            style="width: 100%; height: 40vw"  
+	            >
+	        </iframe>
+	    </div>
+
+	  <a class="close-reveal-modal" href="javascript:;">&#215;</a>
 	</div>
 
 

@@ -87,9 +87,9 @@ MOUNTAINS
 }
 
 #mountain_text_1 span {
-	
+	position: relative;
 	opacity: 0;
-
+	//z-index: 10000;
 	&.small {
 		letter-spacing: 20px;
 	}
@@ -99,6 +99,13 @@ MOUNTAINS
 }
 
 
+.reel-button {
+	font-weight: 300;
+	font-size: 14pt;
+	position: relative;
+	z-index: 5000000000;
+}
+
 .mountain_text_1 {
 	top: 50vh;
 }
@@ -106,10 +113,10 @@ MOUNTAINS
 	top: 300vh;
 }
 .mountain_text_3 {
-	top: 550vh;
+	top: 500vh;
 	z-index: 0;
 	color: #000;
-	transform: translateY(-50%);
+	transform: translateY(-60%);
 }
 
 .onTop {

@@ -9,7 +9,7 @@
 
 
 	var venn_duration = jQuery('#venn').innerHeight();
-
+	console.log('venn_duration', venn_duration);
 	// Get the height to set the duration
 	var vennDurationValueCache;
 	function getVennDuration () {
@@ -36,11 +36,11 @@
 	vennTimeline.to(window, getVennDuration()*3, {frame:1000}, 0);
 
 	var vennScene = new ScrollMagic.Scene({
-		triggerElement: '#venn-container',
-		triggerHook: 0,
-		reverse: true
+			triggerElement: '#venn-container',
+			triggerHook: 0,
+			reverse: true
 		})
-		.duration( venn_duration )
+		.duration( (getVennDuration()/2)*5 ) //venn_duration/2 )
 		.setTween(vennTimeline)
 		.setPin('#venn-container', {
 			pushFollowers: false
@@ -48,13 +48,23 @@
 		.addTo(vennController);
 
 	var resultsScene = new ScrollMagic.Scene({
-		triggerElement: '#results',
-		//triggerHook: 'onCenter',
-		reverse: true
-	})
-		.duration( venn_duration )
+			triggerElement: '#results',
+			//triggerHook: 'onCenter',
+			reverse: true
+		})
+		//.duration( venn_duration/7*2 - 30 )
+		.duration( (getVennDuration()/2) )
 		.setPin( '#results' )
 		.addTo(vennController);
+
+	// var videoScene = new ScrollMagic.Scene({
+	// 	triggerElement: '#go',
+	// 	triggerHook: 0,
+	// 	reverse: true
+	// })
+	// .duration( getVennDuration() )
+	// .setPin('#go')
+	// .addTo(vennController);
 
 
 	dist = 120;
@@ -178,9 +188,9 @@
 	maskCanvas.height = ctx.height;
 	var maskCtx = maskCanvas.getContext('2d');
 
-	var magenta = 	'rgba(177,	61,		150,	1)';
-	var blue = 		'rgba(26, 	60, 	107,	1)';
-	var mint = 		'rgba(166,	220,	209,	1)';
+	var magenta = 	'rgba(177,	61,		150,	.85)';
+	var blue = 		'rgba(26, 	60, 	107,	.85)';
+	var mint = 		'rgba(166,	220,	209,	.85)';
 	var green = 	'rgba(62,	185,	128, 	.85)';
 
 	ctx.draw = function() {
@@ -196,7 +206,7 @@
 		pos3 = get_pos(circle_3,   frame );
 		size3 = get_size(circle_3, frame );
 		
-		ctx.fillStyle = blue;
+		ctx.fillStyle = mint;
 	    ctx.beginPath();
 	    ctx.arc( pos3.x, pos3.y, size3, 0, TWO_PI );
 	    ctx.rect(ctx.width,0,-ctx.width, ctx.height);
@@ -234,7 +244,7 @@
 
     	pos1 = get_pos(circle_1, frame );
     	size1 = get_size(circle_1, frame );
-        ctx.fillStyle = mint;
+        ctx.fillStyle = blue;
         ctx.beginPath();
         ctx.arc( pos1.x, pos1.y, size1, 0, TWO_PI );
         ctx.rect(ctx.width,0,-ctx.width, ctx.height);

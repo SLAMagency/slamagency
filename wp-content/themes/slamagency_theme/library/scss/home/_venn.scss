@@ -29,29 +29,39 @@
 
 #venn {
 	width: 100vw;
-	height: 700vh;
+	height: 600vh;
+	z-index: 10;
 
 	canvas {
 		position: relative;
 		z-index: 100;
 	}
-	.background-video {
-		position: relative;
-		z-index: 2;
-	}
+	// .background-video {
+	// 	position: relative;
+	// 	z-index: 2;
+	// }
 	section {
-		z-index: 20;
+		z-index: 2000;
 	}
 	
 }
 
 #results {
 	
-	font-size: 12vh;
+	font-size: 20vh;
 	color: #FFF;
 	margin-top: 25%;
 	transform: translateY(-50%);
 
+}
+
+.creativity-results {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 5vh;
+	z-index: 101;
+	line-height: 1.05em;
 }
 
 h3 {

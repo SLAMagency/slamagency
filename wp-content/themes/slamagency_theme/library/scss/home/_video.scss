@@ -3,7 +3,14 @@
 
 
 .background-video {
-	background: $blue url('../img/hatch.png');
+	background: $gray url('../img/hatch.png');
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .bgvideoposter,
@@ -33,7 +40,7 @@ video#bgVideo {
 
 .hatch-overlay {
 	content: '';
-	background-image: url('../img/hatch.png');
+	background-image: url('../images/hatch.png');
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -55,6 +62,25 @@ video#bgVideo {
 
 }
 
+#video-play {
+    font-size: 15vh;
+    z-index: 2000;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+
+    color: $magenta;
+
+    i[class*="fi-"] {
+        padding: 0px;
+    }
+}
+
+#video-modal {
+    z-index: 3000;
+}
+
 #time {
 	a {
 		color: $mint;
@@ -65,3 +91,5 @@ section.auto-height {
 	min-height: auto;
 	height: auto;
 }
+
+
