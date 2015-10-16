@@ -1,0 +1,24 @@
+.page-mountain {
+	.slam_section_content {
+		z-index: 1;
+		position: relative;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		background: url('../images/svg/page-mountain-left-white.svg') no-repeat bottom center;
+		width: 106%;
+		bottom: 0px;
+		left: -3%;
+		height: 0px;
+		padding-bottom: 40%;
+		background-size: contain;
+		z-index: 0;
+
+	} 
+
+	&.center:after {
+		background: url('../images/svg/page-mountain-center-white.svg') no-repeat bottom center;
+		
+	}
+}

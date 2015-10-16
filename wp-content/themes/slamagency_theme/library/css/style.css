@@ -16,6 +16,7 @@ of the styles inside media queries.
  *    user zoom.
  */
 @import url(http://fonts.googleapis.com/css?family=Oswald:700,300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1684,7 +1685,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -2109,7 +2110,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3093,7 +3094,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -3386,7 +3387,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3629,7 +3630,7 @@ ul.pagination {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem;
@@ -3645,7 +3646,7 @@ ul.pagination {
     .side-nav li.active > a:first-child:not(.button) {
       color: #75d1a6;
       font-weight: normal;
-      font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3719,7 +3720,7 @@ table {
       background-color: #EFEFEF;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #e1e1e1; }
@@ -4022,7 +4023,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -4558,7 +4559,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Oswald", "Abel", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -5943,7 +5944,7 @@ COMMENT STYLES
     border-style: solid;
     border-width: 0;
     cursor: pointer;
-    font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal;
     line-height: normal;
     margin: 0 0 1.25rem;
@@ -6349,30 +6350,6 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
-.button {
-  background: transparent;
-  border: 2px solid #FFF;
-  border-color: inherit;
-  color: inherit;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 1.3em;
-  margin-bottom: 0px;
-  -webkit-transition: .1s;
-          transition: .1s; }
-  .button:hover, .button:active, .button:focus {
-    background: #FFF;
-    color: #000; }
-    .bg-white .button:hover, .bg-white .button:active, .bg-white .button:focus {
-      border-color: #3EB980;
-      color: #3EB980; }
-  .button:visited {
-    background: transparent; }
-
-.button.min200 {
-  min-width: 200px; }
-
 .green {
   color: #3EB980; }
 
@@ -6432,6 +6409,23 @@ be set to display none.
 .bg-black {
   background-color: #000000;
   color: #FFF; }
+
+.page-mountain .slam_section_content {
+  z-index: 1;
+  position: relative; }
+.page-mountain:after {
+  content: '';
+  position: absolute;
+  background: url("../images/svg/page-mountain-left-white.svg") no-repeat bottom center;
+  width: 106%;
+  bottom: 0px;
+  left: -3%;
+  height: 0px;
+  padding-bottom: 40%;
+  background-size: contain;
+  z-index: 0; }
+.page-mountain.center:after {
+  background: url("../images/svg/page-mountain-center-white.svg") no-repeat bottom center; }
 
 .parallax__layer--base {
   z-index: 10; }
@@ -6615,9 +6609,13 @@ section.full-height {
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: inherit; }
+  color: inherit;
+  font-weight: 300; }
 
-h1, h2, h3, h4 {
+h1, h2 {
+  font-weight: bold; }
+
+h1, h2, h3 {
   text-transform: uppercase; }
 
 h3 {
@@ -6625,6 +6623,11 @@ h3 {
   line-height: 1em; }
   h3.bold {
     font-weight: bold; }
+
+h4 {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic; }
 
 .team-list h5 {
   margin-bottom: 0px; }
@@ -6656,7 +6659,7 @@ i[class*="fi-"] {
   padding-right: .5em; }
 
 #home {
-  font-family: "Oswald", "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Oswald", "Abel", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 100;
   font-size: 2rem;
   line-height: 1em; }
@@ -6690,7 +6693,7 @@ ol.process-list {
     margin-bottom: 2em; }
     ol.process-list > li:before {
       content: counter(step-counter);
-      font-family: "Oswald", "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Oswald", "Abel", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-weight: bold;
       font-size: 1.5em;
       padding: 0px;
@@ -6748,7 +6751,7 @@ footer.footer {
   .super-header li {
     display: inline-block; }
   .super-header a {
-    font-family: "Oswald", "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Oswald", "Abel", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     text-transform: uppercase;
     color: #787878;
     padding: 0px 0px 0px 15px; }
@@ -6767,7 +6770,7 @@ footer.footer {
   width: auto; }
 
 .slam-top-bar-section {
-  font-family: "Oswald", "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Oswald", "Abel", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase; }
   .slam-top-bar-section li {
     display: inline-block; }
@@ -6788,7 +6791,7 @@ footer.footer {
 
 body {
   background-color: #202020;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 100%; }
 
 #content {
@@ -7091,6 +7094,19 @@ body {
     opacity: 0;
     width: 50px;
     height: 50px; } }
+#cta {
+  position: relative;
+  z-index: 20; }
+  #cta .button {
+    margin-bottom: 0px;
+    margin: .9375rem 0px;
+    background-color: #B13D96;
+    -webkit-transition: .3s;
+            transition: .3s; }
+    #cta .button:hover {
+      background-color: #FF0077;
+      letter-spacing: 3px; }
+
 .go-to-next {
   background-color: #FFF;
   padding: 10px;
@@ -7364,7 +7380,7 @@ hr.short {
   .scrollmouse:after {
     content: 'SCROLL';
     opacity: 0;
-    font-family: "Oswald", "Abel", "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Oswald", "Abel", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     position: absolute;
     color: #B13D96;
     top: -10px;
@@ -7460,10 +7476,8 @@ hr.short {
 #results {
   font-size: 20vh;
   color: #FFF;
-  margin-top: 25%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  line-height: 0em;
+  margin-bottom: 0px; }
 
 .creativity-results {
   position: absolute;
@@ -7547,13 +7561,24 @@ video#bgVideo {
           transform: translateX(-50%) translateY(-50%) scale3d(1.2, 1.2, 1.2); }
 
 #video-play {
-  font-size: 15vh;
-  z-index: 2000;
+  font-size: 50px;
+  z-index: 3000;
   position: absolute;
-  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
   top: 50%;
-  color: #B13D96; }
+  padding: 0px 50px;
+  color: #FFFFFF;
+  -webkit-transition: .3s;
+          transition: .3s;
+  background-color: #B13D96; }
+  #video-play:hover {
+    background-color: #FF0077;
+    padding: 5px 55px;
+    margin-top: -5px; }
   #video-play i[class*="fi-"] {
     padding: 0px; }
 

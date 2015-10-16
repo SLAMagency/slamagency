@@ -36,7 +36,7 @@
 	</div>
 	<!-- <h1><div class='bigtext'><span>NOW</span><span class="light">IS YOUR TIME FOR</span><span>GREATNESS</span></div>
 	 -->	
-	<a href="#" data-reveal-id="video-modal" id="video-play"><i class="fi-play-circle"></i></a>
+	<a href="#" data-reveal-id="video-modal" id="video-play"><i class="fi-play"></i></a>
 
 		<!-- <a href="#video">
 			

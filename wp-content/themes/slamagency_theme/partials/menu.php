@@ -6,7 +6,7 @@
 			<?php dynamic_sidebar( 'menu' ); ?>
 		</ul>
 	<?php else : ?>
-		<div class="columns medium-4 menu-item"><h3><a href="/">Homex</a></h3></div>
+		<div class="columns medium-4 menu-item"><h3><a href="/">Home</a></h3></div>
 		<div class="columns medium-4 menu-item"><h3><a href="/about/">About</a></h3></div>
 		<div class="columns medium-4 menu-item"><h3><a href="/start-now/">Start Now</a></h3></div>
 	<?php endif; ?>

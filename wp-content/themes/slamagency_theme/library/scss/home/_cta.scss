@@ -1,0 +1,16 @@
+#cta {
+	position: relative;
+	z-index: 20;
+
+	.button {
+		margin-bottom: 0px;
+		margin: .9375rem 0px;
+		background-color: $magenta;
+		transition: .3s;
+		&:hover {
+			background-color: #FF0077;
+			letter-spacing: 3px;
+		}
+	}
+
+}

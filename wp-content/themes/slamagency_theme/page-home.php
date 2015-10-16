@@ -52,6 +52,15 @@ Template Name: SLAM! Home
 
 		<?php //include('home-partials/video.php'); ?>
 
+		<section id="cta" class="section bg-white thin-padding">
+			<div class="content">
+				<div class="row">
+					<div class="columns medium-6"><a href="#" class="button expand large">LEARN MORE</a></div>
+					<div class="columns medium-6"><a href="#" class="button expand large">GET STARTED</a></div>
+	        	</div>
+			</div>
+		</section>
+
 	</div>
 
 	<!-- ––––––––––––––– -->
@@ -84,24 +93,27 @@ Template Name: SLAM! Home
 	            <h2 class='bigtext'>I'ts more than possible.</h2>
 	            
 	            <h4>Here's how we do it.</h4>
-	            <a class="next" href="#video"><i class="fi-play-circle"></i></a>
-	        </div>
-	    </section>
-	    <section id="mobile-venn" class="bg-blue">
-	        <div class="content">
-	            <h2 class='bigtext'>This is creativity that drives results</h2>
-	            
-	            <h4>Art + Science + Intuition =</h4>
-	            <a class="next" href="#video"><i class="fi-play-circle"></i></a>
-	        </div>
-	    </section>
-	    <section id="mobile-video" class="bg-white top-angle">
-	        <div class="content">
-	            <h2 class='bigtext text-center'>Results</h2>
-	            <a href="#" data-reveal-id="video-modal" id="video-play"><i class="fi-play-circle"></i></a>
-	            
-	            
-	            
+	            <div class="video-wrapper ratio24">
+	        	    <iframe 
+	        	        id="video--home"
+	        	        class="video--wistia"
+	        	        src="//fast.wistia.net/embed/iframe/5ajp75g6fr?videoFoam=true"
+	        	        allowtransparency="true"
+	        	        frameborder="0"
+	        	        scrolling="no"
+	        	        class="wistia_embed"
+	        	        name="wistia_embed"
+	        	        allowfullscreen="allowfullscreen"
+	        	        mozallowfullscreen="mozallowfullscreen"
+	        	        webkitallowfullscreen="webkitallowfullscreen"
+	        	        oallowfullscreen="oallowfullscreen"
+	        	        msallowfullscreen="msallowfullscreen"
+	        	        style="width: 100%; height: 40vw"  
+	        	        >
+	        	    </iframe>
+	        	</div>
+	        	<a href="" class="get-started button">LEARN MORE</a>
+	        	<a href="" class="get-started button">GET STARTED</a>
 	        </div>
 	    </section>
 	</div>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
- 	$('#scrollmouse, .scrollmagic-pin-spacer').click(function(){
+ 	$('#scrollmouse').click(function(){ //, .scrollmagic-pin-spacer
  		var top = $('html').scrollTop() > $('body').scrollTop() ? $('html').scrollTop() : $('body').scrollTop();
  		height = $(window).height();
  		duration = 1500;
@@ -14,6 +14,9 @@ $(document).ready(function(){
  		}  else if(top < height*6.4) {
  			newtop = height*6.5;
  			duration = 1500;
+ 		} else {
+ 			newtop = top+height;
+ 			duration = 1000;
  		}
 
 

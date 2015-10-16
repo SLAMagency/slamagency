@@ -53,7 +53,7 @@
 			reverse: true
 		})
 		//.duration( venn_duration/7*2 - 30 )
-		.duration( (getVennDuration()/2) )
+		.duration( (getVennDuration()/2)*1.5 - 150 )
 		.setPin( '#results' )
 		.addTo(vennController);
 
