@@ -113,6 +113,37 @@ function joints_footer_links_fallback() {
 SIDEBARS
 *********************/
 
+/*
+ * @param: $sidebar_id: The Id of the sidebar in question.
+ # @param $display_err_log: If true, will echo useful info to the error log.  
+ * @Return: the number of active widgets in a sidebar with id of $sidebar_id 
+ */
+function count_sidebar_widgets( $sidebar_id, $display_err_log = false ) {
+    
+    $the_sidebars = wp_get_sidebars_widgets();
+    
+    if( !isset( $the_sidebars[$sidebar_id] ) ) {
+        
+        $error_string = __( 'Invalid sidebar ID' );
+    	
+    	if ($display_err_log) {
+    		error_log($error_string);
+        }
+
+        return $error_string;
+
+    } else {
+
+    	$widget_array = $the_sidebars[$sidebar_id];
+
+        if ($display_err_log) {
+        	error_log( print_r($widget_array, true) ); 
+     	}
+
+     	return count( $the_sidebars[$sidebar_id] );
+    }   
+}
+
 // SIDEBARS AND WIDGETIZED AREAS
 function joints_register_sidebars() {
 
