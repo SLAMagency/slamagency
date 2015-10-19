@@ -35,6 +35,12 @@
     opacity: 1;
   }
 
+  
+  .widget {
+    margin: 0px;
+    margin: 0px;
+  }
+
 }
 
 .menu-item { 
@@ -44,11 +50,12 @@
     line-height: 0vh;
     width: 100%;
     display: block;
-    color: $gray;
+    color: $white;
+    //background: $green;
     text-transform: uppercase;
     transition: line-height .4s, background .1s, color .1s, transform .4s;
     &:hover {
-      background: $green;
+      background: $magenta;
       color: #FFF;
     }
     
@@ -62,12 +69,56 @@
   }
 }
 
-#menu.open .menu-item a {
-  line-height: 20vh;
-  @media #{$medium-up}{ 
-    line-height: 30vh; 
+#menu.open  {
+  
+  .menu-item { 
+    a {
+      line-height: 20vh;
+
+      @media #{$medium-up}{ 
+        line-height: 30vh; 
+      }
+
+      transform: rotate(0deg);
+    }
+
+    &.top-menu-item a {
+      line-height: 10vh;
+      background-color: $green;
+    }
+
+    // & .strategy {
+    //   &:after {
+    //     background: $blue url('../images/svg/brain.svg') no-repeat center center;
+    //     background-size: contain;
+    //   }
+     
+    // }
+
+    // & .advertising {
+    //   background: $green url('../images/svg/heart.svg') no-repeat center center;
+    //   background-size: contain;
+    // }
+
+    // & .creative {
+    //   background: $sky url('../images/svg/lightbulb.svg') no-repeat center center;
+    //   background-size: contain;
+    // }
+
   }
-  transform: rotate(0deg);
+
+  
+
+
+}
+
+
+i.icon {
+  display: block;
+  width: 100%;
+  height: 70%;
+  background: $blue url('../images/svg/brain.svg') no-repeat center center;
+  background-size: contain;
 }
 
 

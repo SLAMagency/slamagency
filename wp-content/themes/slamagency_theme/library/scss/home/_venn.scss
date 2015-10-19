@@ -6,7 +6,7 @@
 		width: 100%;
 		height: 100%;
 	}
-	background: url('../images/slamoffice.jpg') no-repeat center center; 
+	background: url('../images/slam-wall_tight.jpg') no-repeat center center; 
 	background-size: cover;
 	//background-color: $magenta;
 } 
@@ -43,6 +43,10 @@
 	section {
 		z-index: 2000;
 	}
+
+	h3 {
+		font-size: 3em;
+	}
 	
 }
 
@@ -66,7 +70,5 @@
 	line-height: 1.05em;
 }
 
-h3 {
-	font-size: 3em;
-}
+
 

@@ -148,10 +148,30 @@ function count_sidebar_widgets( $sidebar_id, $display_err_log = false ) {
 function joints_register_sidebars() {
 
 	register_sidebar(array(
-		'id' => 'menu',
-		'name' => __('Menu', 'jointstheme'),
+		'id' => 'top-menu',
+		'name' => __('Top Menu', 'jointstheme'),
+		'description' => __('The drop overlay menu, top row.', 'jointstheme'),
+		'before_widget' => '<li id="%1$s" class="widget %2$s menu-item top-menu-item">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="menu-item-title">',
+		'after_title' => '</h3>',
+	));
+
+	register_sidebar(array(
+		'id' => 'middle-menu',
+		'name' => __('Middle Menu', 'jointstheme'),
 		'description' => __('The drop overlay menu.', 'jointstheme'),
-		'before_widget' => '<li id="%1$s" class="widget %2$s menu-item">',
+		'before_widget' => '<li id="%1$s" class="widget %2$s menu-item middle-menu-item">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="menu-item-title">',
+		'after_title' => '</h3>',
+	));
+
+	register_sidebar(array(
+		'id' => 'bottom-menu',
+		'name' => __('Bottom Menu', 'jointstheme'),
+		'description' => __('The drop overlay menu.', 'jointstheme'),
+		'before_widget' => '<li id="%1$s" class="widget %2$s menu-item bottom-menu-item">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="menu-item-title">',
 		'after_title' => '</h3>',
