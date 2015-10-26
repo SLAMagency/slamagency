@@ -35,6 +35,9 @@
 	var vennTimeline = new TimelineMax();
 	vennTimeline.to(window, getVennDuration()*3, {frame:1000}, 0);
 
+	var resultsTimeline = new TimelineMax();
+	//resultsTimeline.to('#results', getVennDuration()/2, {color: FFFFFF}, 0);
+
 	var vennScene = new ScrollMagic.Scene({
 			triggerElement: '#venn-container',
 			triggerHook: 0,
@@ -49,11 +52,12 @@
 
 	var resultsScene = new ScrollMagic.Scene({
 			triggerElement: '#results',
-			//triggerHook: 'onCenter',
+			triggerHook: .4,
 			reverse: true
 		})
 		//.duration( venn_duration/7*2 - 30 )
-		.duration( (getVennDuration()/2)*1.5 - 150 )
+		.duration( (getVennDuration()/2)*1.5 - 250 )
+		//.setTween(resultsTimeline)
 		.setPin( '#results' )
 		.addTo(vennController);
 
@@ -259,20 +263,20 @@
 
 
         ctx.fillStyle = 'transparent';
-        ctx.lineWidth=2;
+        ctx.lineWidth=4;
         ctx.strokeStyle = "#FFFFFF";
         ctx.beginPath();
-        	ctx.arc( pos3.x, pos3.y, size3, 0, TWO_PI );
+        	ctx.arc( pos3.x, pos3.y, size3+2, 0, TWO_PI );
         ctx.stroke();
 
         //ctx.fillStyle = 'rgba(0, 147, 177,.5)';
         ctx.beginPath();
-        	ctx.arc( pos2.x, pos2.y, size2, 0, TWO_PI );
+        	ctx.arc( pos2.x, pos2.y, size2+2, 0, TWO_PI );
         ctx.stroke();
         //ctx.fill();
 
         ctx.beginPath();
-        	ctx.arc( pos1.x, pos1.y, size1, 0, TWO_PI );
+        	ctx.arc( pos1.x, pos1.y, size1+2, 0, TWO_PI );
         ctx.stroke();
 
 

@@ -1,7 +1,7 @@
 <section id="venn" class='bg-blue'>
 
 	<div id="venn-container">
-		<h2 class='creativity-results'>THIS IS CREATIVITY<br/>THAT DRIVES RESULTS.</h2>
+		
 
 		
 		
@@ -34,7 +34,7 @@
 	<section class='full-height'>
 		
 	</section>
-	<section  class='full-height'>
-		<h1 id="results" class='text-center'>RESULTS</h1>
+	<section  id="results-section" class='full-height'> 
+		<h1 id="results" class='text-center'><span class='small'>THIS IS CREATIVITY THAT DRIVES</span>RESULTS</h1>
 	</section>
 </section>

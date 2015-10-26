@@ -11,7 +11,7 @@
     background: transparent;
   }
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
 
 }
 
@@ -28,6 +28,8 @@
 
   transition: .2s;
 
+
+
   background: rgba(255,255,255,.8);
   padding-top: 60px;
   &.open {
@@ -41,85 +43,232 @@
     margin: 0px;
   }
 
+
+
 }
 
-.menu-item { 
-  text-align: center;
-  a {
+
+#menu {
+
+  .menu-item { 
+    text-align: center;
+    height: 0vh;
     transform: rotate(-20deg);
-    line-height: 0vh;
-    width: 100%;
-    display: block;
-    color: $white;
-    //background: $green;
-    text-transform: uppercase;
-    transition: line-height .4s, background .1s, color .1s, transform .4s;
-    &:hover {
-      background: $magenta;
-      color: #FFF;
+    border-radius: 50px;
+    transition: height .4s, background .1s, color .1s, transform .3s border-radius, .2s;
+    
+    &:nth-child(2) {
+      transition-delay: .025s;
     }
-    
-    
+    &:nth-child(3) {
+      transition-delay: .05s;
+    }
+    &:nth-child(4) {
+      transition-delay: .075s;
+    }
+    &:nth-child(5) {
+      transition-delay: .100s;
+    }
+    &:nth-child(6) {
+      transition-delay: .125s;
+    }
+    &:nth-child(7) {
+      transition-delay: .150s;
+    }
   }
-  &:nth-child(2) a{
-    transition-delay: .025s;
-  }
-  &:nth-child(3) a{
-    transition-delay: .05s;
-  }
+}
+
+@keyframes menu-glow {
+  from {background-color: $magenta;}
+  to   {background-color: #FF0077;}
 }
 
 #menu.open  {
+
+  overflow-y: scroll;
+  z-index: 9000;
   
   .menu-item { 
-    a {
-      line-height: 20vh;
+    border-radius: 0px;
+    transform: rotate(0deg);
+    position: relative;
 
-      @media #{$medium-up}{ 
-        line-height: 30vh; 
-      }
-
-      transform: rotate(0deg);
+    .textwidget {
+      height: 100%;
     }
 
-    &.top-menu-item a {
-      line-height: 10vh;
-      background-color: $green;
-    }
-
-    // & .strategy {
-    //   &:after {
-    //     background: $blue url('../images/svg/brain.svg') no-repeat center center;
-    //     background-size: contain;
-    //   }
-     
-    // }
-
-    // & .advertising {
-    //   background: $green url('../images/svg/heart.svg') no-repeat center center;
-    //   background-size: contain;
-    // }
-
-    // & .creative {
-    //   background: $sky url('../images/svg/lightbulb.svg') no-repeat center center;
-    //   background-size: contain;
-    // }
+    
+    
 
   }
 
+  .top-menu-item,
+  .middle-menu-item {
+    a {
+      
+      //line-height: 0vh;
+      width: 100%;
+      display: block;
+      color: $white;
+      //background: $green;
+      text-transform: uppercase;
+      
+      &:hover {
+        background: $magenta;
+        color: #FFF;
+      }
+      
+      
+    }
+    a.strategy {
+      background-color: rgba($blue, .75);
+    }
+    a.advertising {
+      background-color: rgba($green, .75);
+    }
+    a.creative {
+      background-color: rgba($sky, .75);
+    }
+    a {
+      
+      transition: .2s; 
+      height: 100%;
+      display: block;
+      &:hover {
+        background-color: $magenta;
+        letter-spacing: 1px;
+        animation-name: menu-glow;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+
+      }
+    }
+
+    
+    
+
+  }
   
+
+  .top-menu-item {
+    
+    line-height: 10vh;
+    height: auto;
+    min-height: 100px;
+    a {
+      background-color: rgba($green,.75);
+      display: block;
+      height: 100%;
+    }
+    
+  }
+
+  .middle-menu-item {
+    height: 20vh;
+    min-height: 200px;
+    i.icon {
+      display: block;
+    }
+    @media #{$medium-up}{
+      height: 30vh;
+      i.icon {
+        display: block;
+      }
+    }
+    font-size: 1.4em;
+    a {
+      display: block;
+      height: 100%;
+      padding: 10% 5% 5% 5%;
+
+    }
+  }
+
+
+  .bottom-menu-item {
+      
+
+      .textwidget {
+
+      }
+      .start-now {
+        font-size: 3rem;
+        line-height: 21vh;
+        background-color: $magenta;
+        transition: .2s;
+        &:hover {
+          letter-spacing: 1px;
+          animation-name: glow;
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease-in-out;
+
+        }
+
+      }
+  
+
+  }
+
+  ul.social {
+    margin: 0px;
+    li {
+      float: left;
+      font-size: 3em;
+      margin: 0px;
+      line-height: 1em;
+    }
+  }
+
+  .contact-box {
+    background-color: rgba($white,.75);
+    color: $gray;
+    a {
+      color: $gray;
+      &:hover {
+        color: $magenta;
+
+
+      }
+    }
+  }
+
+
 
 
 }
+
+
 
 
 i.icon {
   display: block;
+  position: relative;
   width: 100%;
   height: 70%;
-  background: $blue url('../images/svg/brain.svg') no-repeat center center;
+  background: transparent url('../images/svg/brain.svg') no-repeat center center;
   background-size: contain;
+  transition: .2s;
+  transform-origin: bottom;
+
+  .advertising & {
+     background-image: url('../images/svg/heart.svg');
+  }
+
+  .creative & {
+     background-image: url('../images/svg/lightbulb.svg');
+  }
+
+  a:hover & {
+    transform: scale(1.1);
+  }
+
+
 }
+
 
 
 // -----------------------------------------------------------

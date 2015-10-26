@@ -1,0 +1,12 @@
+.split {
+	@media #{$small-only}{
+
+		.split-content {
+			padding: 60px 30px;
+			div:first-child h3:only-child { 
+				margin-top: -90px;
+			}
+		}
+
+	}
+}

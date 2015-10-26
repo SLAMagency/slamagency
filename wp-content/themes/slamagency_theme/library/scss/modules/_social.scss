@@ -1,0 +1,23 @@
+.social-media {
+	font-size: 3rem;
+	line-height: 0rem;
+	list-style: none;
+	@media #{$large-up}{
+		float: right;
+	}
+	li {
+		float: left;
+	}
+	li:nth-child(n) {
+		padding-right: 10px;
+	}
+	a {
+		span {
+			display: none;
+		}
+		
+	}
+	i[class*="fi-"] {
+		padding: 0px;
+	}
+}

@@ -24,8 +24,26 @@ section.full-height {
 	transform: translateY(-50%);
 }
 
+.fillheight {
+	min-height: 100%;
+}
+
+.split,
+.split-right {
+	.row {
+		margin: 0px;
+	}
+	@media #{$large-up} {
+		.split-content { 
+			margin-top: 25%;
+			transform: translateY(-25%);
+		}
+	}
+}
+
+
 // Opacity Settings
-.has_image {
+.has_image, .has-image {
 	overflow-y: hidden; 
 	position: relative;
 }
@@ -143,7 +161,9 @@ section.full-height {
 }
 
 
-
+section.videos {
+	position: relative;
+}
 
 // Content Width Settings
 .fullwidth.row {

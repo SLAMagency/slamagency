@@ -38,6 +38,10 @@ video#bgVideo {
 
 }
 
+.ztop {
+    z-index: 2000;
+}
+
 .hatch-overlay {
 	content: '';
 	background-image: url('../images/hatch.png');
@@ -83,6 +87,17 @@ video#bgVideo {
 
     i[class*="fi-"] {
         padding: 0px;
+    }
+
+    &.with-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: inline-block;
+        transform: none;
+        &:hover {
+            transform: none;
+        }
     }
 }
 

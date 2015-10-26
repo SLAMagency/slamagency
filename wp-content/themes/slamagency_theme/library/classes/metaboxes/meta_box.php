@@ -1,7 +1,7 @@
 <?php
 
 // metaboxes directory constant
-define( 'CUSTOM_METABOXES_DIR', get_template_directory_uri() . '/library/SLAM/metaboxes' );
+define( 'CUSTOM_METABOXES_DIR', get_template_directory_uri() . '/library/classes/metaboxes' );
 
 /**
  * recives data about a form field and spits out the proper html
@@ -47,9 +47,6 @@ function custom_meta_box_field( $field, $meta = null, $repeatable = null ) {
 	switch( $type ) {
 		case 'break':
 			echo '<hr/>';
-			break;
-		case 'custom':
-			echo "<div>" . $field['custom'] . "</div>";
 			break;
 		// basic
 		case 'text':
@@ -398,6 +395,8 @@ function meta_box_santitize_boolean( $string ) {
  */
 function meta_box_sanitize( $string, $function = 'sanitize_text_field' ) {
 	switch ( $function ) {
+		case 'none':
+			return $string;
 		case 'intval':
 			return intval( $string );
 		case 'absint':

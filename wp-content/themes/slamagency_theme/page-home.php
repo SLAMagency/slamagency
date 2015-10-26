@@ -48,9 +48,9 @@ Template Name: SLAM! Home
 
 		<?php include('home-partials/venn.php'); ?>
 
-		<?php include('home-partials/time.php'); ?>
+		<?php //include('home-partials/time.php'); ?>
 
-		<?php //include('home-partials/video.php'); ?>
+		<?php include('home-partials/video.php'); ?>
 
 		<section id="cta" class="section bg-white thin-padding">
 			<div class="content">

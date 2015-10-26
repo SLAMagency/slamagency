@@ -5299,29 +5299,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/library\/fonts\/worksans-bold-demo.html": {
+	"\/library\/FONTS\/worksans-bold-demo.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/library\/fonts\/worksans-bold-demo.html",
+		"inputAbbreviatedPath": "\/library\/FONTS\/worksans-bold-demo.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/library\/fonts\/worksans-regular-demo.html": {
+	"\/library\/FONTS\/worksans-regular-demo.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/library\/fonts\/worksans-regular-demo.html",
+		"inputAbbreviatedPath": "\/library\/FONTS\/worksans-regular-demo.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/library\/fonts\/worksans-thin-demo.html": {
+	"\/library\/FONTS\/worksans-thin-demo.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/library\/fonts\/worksans-thin-demo.html",
+		"inputAbbreviatedPath": "\/library\/FONTS\/worksans-thin-demo.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

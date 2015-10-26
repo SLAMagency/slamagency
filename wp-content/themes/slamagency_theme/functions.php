@@ -17,7 +17,7 @@ require_once(get_template_directory().'/library/customize.php');
 // require_once(get_template_directory().'/library/translation/translation.php'); 
 
 // LOAD Metaboxes
-require_once(get_template_directory().'/library/SLAM/metaboxes/meta_box.php'); 
+require_once(get_template_directory().'/library/classes/metaboxes/meta_box.php'); 
 
 // SLAM CLASSES
 require_once(get_template_directory().'/library/SLAM/SLAM.php'); 
@@ -263,5 +263,38 @@ function joints_comments($comment, $args, $depth) {
 	<!-- </li> is added by WordPress automatically -->
 <?php
 } // don't remove this bracket!
+
+
+
+/*********************
+Stop Wordpress from Stripping Html
+*********************/
+
+
+// stop wp removing div tags
+function ikreativ_tinymce_fix( $init ) 
+{
+    // html elements being stripped
+    $init['extended_valid_elements'] = 'div[*],article[*],span[*],i[*],a[*],svg[*],p[*]';
+
+    // don't remove line breaks
+    $init['remove_linebreaks'] = false; 
+
+    // convert newline characters to BR
+    $init['convert_newlines_to_brs'] = true; 
+
+    // don't remove redundant BR
+    $init['remove_redundant_brs'] = false;
+
+    // pass back to wordpress
+    return $init;
+}
+add_filter('tiny_mce_before_init', 'ikreativ_tinymce_fix');
+
+remove_filter( 'the_content', 'wpautop' );
+
+
+
+
 
 ?>

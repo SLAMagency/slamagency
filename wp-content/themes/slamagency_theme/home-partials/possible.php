@@ -3,7 +3,7 @@
 		<div class="columns medium-5 small-centered text-center">
 	    	<?php include('svg/more-than-possible.svg.php'); ?>
 	    	<hr class="short">
-	    	<h3>HERE'S HOW<br>WE DO IT.</h3>
+	    	<h3>HERE'S HOW<br>WE DO IT.</h3><br/>
 	    	<!-- <h3>WHEN YOU CREATE SOMETHING THAT IS UNIQUELY YOURS, IT CANNOT BE TAKEN AWAY.</h3>
 	    	<br/> -->
 	    	<a href="#venn">

@@ -7,7 +7,72 @@ add_action( 'add_meta_boxes', 'slam_page_children_meta_box' );
 
 
 $fields = array(
-	
+
+
+	array( // 
+		'label'	=> 'Page Type', // <label>
+		'id'	=> $prefix.'type', // field id and name
+		'type'	=> 'akselect', // type of field
+		'default' => 'normal',
+		'options' => array(
+			'Normal' 				=> 'normal',
+			//'Header'				=> 'header',
+			//'Slider'				=> 'slider',
+			//'List' 					=> 'list',
+			
+			'Split Left'			=> 'split',
+			'Split Right'			=> 'split-right',
+			//'Custom Background' 	=> 'custom',
+			'Video with Video BG'	=> 'videos',
+			
+		),
+	),
+
+	array( // 
+		'label'	=> 'iFrame Code', // <label>
+		'dependent' => array(
+			'field'	=> $prefix.'type',
+			'value' => array('videos'),
+			),
+		//'desc'	=> 'Use', // description
+		'id'	=> $prefix.'iframe', // field id and name
+		'type'	=> 'textarea', // type of field
+		'sanitizer' => 'none',
+	),	
+	array( // 
+		'label'	=> 'BG Video: MP4', // <label>
+		'dependent' => array(
+			'field'	=> $prefix.'type',
+			'value' => array('videos'),
+			),
+		//'desc'	=> 'Use', // description
+		'id'	=> $prefix.'mp4', // field id and name
+		'type'	=> 'text', // type of field
+		'sanitizer' => 'none',
+	),	
+	array( // 
+		'label'	=> 'BG Video: OGG', // <label>
+		'dependent' => array(
+			'field'	=> $prefix.'type',
+			'value' => array('videos'),
+			),
+		//'desc'	=> 'Use', // description
+		'id'	=> $prefix.'ogg', // field id and name
+		'type'	=> 'text', // type of field
+		'sanitizer' => 'none',
+	),	
+	array( // 
+		'label'	=> 'BG Video: webm', // <label>
+		'dependent' => array(
+			'field'	=> $prefix.'type',
+			'value' => array('videos'),
+			),
+		//'desc'	=> 'Use', // description
+		'id'	=> $prefix.'webm', // field id and name
+		'type'	=> 'text', // type of field
+		'sanitizer' => 'none',
+	),	
+
 	array( // 
 		'label'	=> 'Background Color', // <label>
 		'id'	=> $prefix.'background_color', // field id and name

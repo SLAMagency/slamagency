@@ -12,6 +12,17 @@ slow the page load.
 // @codekit-prepend "jquery.transit.min.js"
 // @codekit-prepend "jquery.fitvids.js"  
 
+var wistia_video = [];
+
+window._wq = window._wq || [];
+var i = 0;
+_wq.push({ "_all": function(video) {
+  console.log("I got a handle to the video!", video);
+  wistia_video[i] = video;
+  i++;
+}});
+    
+
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 	// load Foundation
@@ -39,15 +50,71 @@ jQuery(document).ready(function($) {
 
     //     $('#content').addClass('page-' + element);
     // });
+    // 
+    // 
+    
+    $('#content h3').wrap('<div>');
 
     
+    var lastScrollTop = 0;
+    header = $('.header');
+
+    function show_hide_header(){
+       var st = $(this).scrollTop();
+       if (st > 200) {
+           if (st > lastScrollTop){
+               // downscroll code
+               header.removeClass('show');
+           } else if(st < lastScrollTop) {
+              // upscroll code
+              header.addClass('show');
+           }
+        } else {
+            header.removeClass('show');
+        }
+       lastScrollTop = st;
+    }
+
+    checkHeader = setInterval(show_hide_header, 100);
+
+
 
 
     $('#nav-icon1').click(function(){
         $(this).toggleClass('open');
         $('#menu').toggleClass('open');
+        header.removeClass('show');
     });
-    
+
+
+
+
+    // Background Video
+    var myVideo = document.getElementById("bgVideo");
+
+    //jQuery(document).ready( function () {
+
+    jQuery("#video-play").click( function() {
+
+        myVideo.pause();
+
+        jQuery(".background-video").fadeOut();
+
+        jQuery("#go")
+            .removeClass("full-height")
+            .addClass('ztop');
+
+        header.removeClass('show');
+
+        wistia_video[0].play();
+
+    });
+
+        
+
+    //}); 
+
+
     
 
 // add all your scripts here
@@ -97,7 +164,7 @@ jQuery(document).ready(function($) {
                     var distance = imageH - H;
 
                     yPos = (yPos*distance);
-                    par.css({y: yPos-100});
+                    par.css({y: yPos-150});
                     //par.css({top: yPos-200 + 'px'});
                     //console.log('I: ' +I + ' W: ' + W + ' H: ' + H + ' x: ' + x + ' imageH: ' + imageH + ' yPos: ' + yPos);
 
@@ -114,7 +181,7 @@ jQuery(document).ready(function($) {
 
                         yPos = (yPos*distance).toFixed(1);
                         
-                        par.css({y: yPos-100});
+                        par.css({y: yPos-150});
 
                         //console.log('I: ' +I + ' W: ' + W + ' H: ' + H + ' x: ' + x + ' imageH: ' + imageH + ' yPos: ' + yPos);
 

@@ -17,8 +17,13 @@
 
 	} 
 
-	&.center:after {
+	&.page-mountain-center:after {
 		background: url('../images/svg/page-mountain-center-white.svg') no-repeat bottom center;
+		
+	}
+
+	&.page-mountain-right:after {
+		background: url('../images/svg/page-mountain-right-white.svg') no-repeat bottom right;
 		
 	}
 }

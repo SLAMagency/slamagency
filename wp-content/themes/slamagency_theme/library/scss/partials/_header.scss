@@ -2,7 +2,13 @@
 $header_height: 70px;
 
 .header {
-	background-color: #FFF;
+	background-color: rgba($gray, 0);
+	transition: .5s;
+	z-index: 10000; 
+}
+
+.header.show {
+	background-color: rgba($gray,.5);
 }
 
 .super-header {
